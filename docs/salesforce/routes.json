@@ -52,5 +52,19 @@
     "integration-connectivity-connected-app-configure",
     "integration-connectivity-generate",
     "agentforce-test"
+  ],
+  "salesforce-industry-playbook": [
+    "agentforce-architecture-analyze",
+    "salesforce-access-design",
+    "data360-governance",
+    "agent-architecture",
+    "persona",
+    "conversation-design",
+    "agentforce-generate",
+    "automation-flow-generate",
+    "platform-apex-generate",
+    "agentforce-test",
+    "platform-metadata-deploy",
+    "agentforce-observe"
   ]
 }

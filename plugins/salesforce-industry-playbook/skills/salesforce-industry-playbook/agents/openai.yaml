@@ -1,0 +1,4 @@
+interface:
+  display_name: "Salesforce Industry Playbook"
+  short_description: "Discover customer context before tailoring Salesforce builds."
+  default_prompt: "Use $salesforce-industry-playbook to tailor a Salesforce build to the customer’s business and existing environment."

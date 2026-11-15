@@ -1,6 +1,6 @@
 # Salesforce Skills
 
-Salesforce and Agentforce skill marketplace: **43 skills**. Includes Data 360, Apex, Flow, LWC, integrations, access, analytics, agent design/testing, grounding, Prompt Builder and Agent API workflows.
+Salesforce and Agentforce skill marketplace: **44 skills**. Includes Data 360, Apex, Flow, LWC, integrations, access, analytics, agent design/testing, grounding, Prompt Builder and Agent API workflows.
 
 ## Install
 
@@ -31,3 +31,5 @@ Extracted from `jonathan-arteaga/arteaga-ai-skills` at baseline `68c6c18a4bc3cf7
 ## Design agents for the job and context
 
 Use `persona` for character and calibration, `conversation-design` for interactions, `agent-architecture` for authority and workflows, and `agentforce-generate` for Agent Script implementation. The [industry and role playbook](plugins/persona/skills/persona/references/industry-patterns.md) combines 12 industry contexts, seven roles, situation-specific behavior, and measurable evaluation. These are adaptable starting points, not stereotypes or preconfigured deployable agents.
+
+Start with `salesforce-industry-playbook` for customer discovery, especially existing or mixed Salesforce estates. It weighs business and environment evidence before industry patterns, compares reuse/adaptation with new build or no-agent options, and hands scoped decisions to the build workflows.

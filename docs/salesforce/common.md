@@ -11,3 +11,7 @@ Use this reference for product claims, security decisions, code generation, or o
 6. For a new build or modernization review, compare the requested capability with current official product documentation and the [Salesforce skills library](https://github.com/forcedotcom/sf-skills). Record the inspected release/commit. Distinguish installed tools from advertised capabilities and plugin-only dependencies; do not copy an upstream workflow that requires missing hooks, servers, or scripts. Adopt a feature only when it solves the task and target support is verified.
 
 The following guidance was checked on 2026-11-15 through the official Labs MCP endpoint. It is a dated baseline, not a claim that every bundled reference or every Salesforce cloud has been exhaustively certified.
+
+## Existing customer environments
+
+For an existing org, ground changes in the customer’s current process, approved rules, data, access, integrations, and active automation. Industry patterns are hypotheses. Reuse current discovery evidence; if business fit or reuse is unresolved, use salesforce-industry-playbook when available or provide a bounded discovery brief. Do not force rediscovery for a known scoped fix. Preserve existing callers, test dependencies and side effects, and define rollback/reconciliation before consequential changes. No org access means provisional findings, not an empty or greenfield environment.

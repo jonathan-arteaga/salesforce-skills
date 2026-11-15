@@ -12,6 +12,10 @@ Use this reference for product claims, security decisions, code generation, or o
 
 The following guidance was checked on 2026-11-15 through the official Labs MCP endpoint. It is a dated baseline, not a claim that every bundled reference or every Salesforce cloud has been exhaustively certified.
 
+## Existing customer environments
+
+For an existing org, ground changes in the customer’s current process, approved rules, data, access, integrations, and active automation. Industry patterns are hypotheses. Reuse current discovery evidence; if business fit or reuse is unresolved, use salesforce-industry-playbook when available or provide a bounded discovery brief. Do not force rediscovery for a known scoped fix. Preserve existing callers, test dependencies and side effects, and define rollback/reconciliation before consequential changes. No org access means provisional findings, not an empty or greenfield environment.
+
 # Agent guidance
 
 - Identify the agent type, builder generation, channel, release, and actual execution user. Employee agents use the logged-in user; Service agents can use an agent user or a verified site user depending on channel/setup. A contact ID in context does not itself enforce record access.

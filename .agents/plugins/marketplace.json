@@ -29,6 +29,18 @@
       "category": "Agentforce"
     },
     {
+      "name": "agentforce-api-integrate",
+      "source": {
+        "source": "local",
+        "path": "./plugins/agentforce-api-integrate"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Agentforce"
+    },
+    {
       "name": "agentforce-architecture-analyze",
       "source": {
         "source": "local",
@@ -89,6 +101,18 @@
       "category": "Agentforce"
     },
     {
+      "name": "agentforce-grounding",
+      "source": {
+        "source": "local",
+        "path": "./plugins/agentforce-grounding"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Agentforce"
+    },
+    {
       "name": "agentforce-observe",
       "source": {
         "source": "local",
@@ -137,54 +161,6 @@
       "category": "Agentforce"
     },
     {
-      "name": "conversation-design",
-      "source": {
-        "source": "local",
-        "path": "./plugins/conversation-design"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Agentforce"
-    },
-    {
-      "name": "persona",
-      "source": {
-        "source": "local",
-        "path": "./plugins/persona"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Agentforce"
-    },
-    {
-      "name": "regulated-industry-agents-review",
-      "source": {
-        "source": "local",
-        "path": "./plugins/regulated-industry-agents-review"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Agentforce"
-    },
-    {
-      "name": "voice-ux",
-      "source": {
-        "source": "local",
-        "path": "./plugins/voice-ux"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Agentforce"
-    },
-    {
       "name": "automation-flow-generate",
       "source": {
         "source": "local",
@@ -209,6 +185,18 @@
       "category": "Salesforce Platform and Analytics"
     },
     {
+      "name": "conversation-design",
+      "source": {
+        "source": "local",
+        "path": "./plugins/conversation-design"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Agentforce"
+    },
+    {
       "name": "crm-analytics-wave-generate",
       "source": {
         "source": "local",
@@ -221,10 +209,70 @@
       "category": "Salesforce Platform and Analytics"
     },
     {
+      "name": "data360-governance",
+      "source": {
+        "source": "local",
+        "path": "./plugins/data360-governance"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Salesforce Platform and Analytics"
+    },
+    {
+      "name": "data360-identity-resolution",
+      "source": {
+        "source": "local",
+        "path": "./plugins/data360-identity-resolution"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Salesforce Platform and Analytics"
+    },
+    {
+      "name": "data360-ingestion-modeling",
+      "source": {
+        "source": "local",
+        "path": "./plugins/data360-ingestion-modeling"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Salesforce Platform and Analytics"
+    },
+    {
+      "name": "data360-query-insights",
+      "source": {
+        "source": "local",
+        "path": "./plugins/data360-query-insights"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Salesforce Platform and Analytics"
+    },
+    {
       "name": "data360-schema-get",
       "source": {
         "source": "local",
         "path": "./plugins/data360-schema-get"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Salesforce Platform and Analytics"
+    },
+    {
+      "name": "data360-segmentation-activation",
+      "source": {
+        "source": "local",
+        "path": "./plugins/data360-segmentation-activation"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -279,6 +327,18 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Salesforce Platform and Analytics"
+    },
+    {
+      "name": "persona",
+      "source": {
+        "source": "local",
+        "path": "./plugins/persona"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Agentforce"
     },
     {
       "name": "platform-apex-generate",
@@ -389,28 +449,28 @@
       "category": "Salesforce Platform and Analytics"
     },
     {
-      "name": "salesforce-flow-auditor",
+      "name": "prompt-template-build",
       "source": {
         "source": "local",
-        "path": "./plugins/salesforce-flow-auditor"
+        "path": "./plugins/prompt-template-build"
       },
       "policy": {
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Salesforce Platform and Analytics"
+      "category": "Agentforce"
     },
     {
-      "name": "tableau-next-asset-create",
+      "name": "regulated-industry-agents-review",
       "source": {
         "source": "local",
-        "path": "./plugins/tableau-next-asset-create"
+        "path": "./plugins/regulated-industry-agents-review"
       },
       "policy": {
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Salesforce Platform and Analytics"
+      "category": "Agentforce"
     },
     {
       "name": "salesforce-access-design",
@@ -425,10 +485,10 @@
       "category": "Salesforce Platform and Analytics"
     },
     {
-      "name": "data360-ingestion-modeling",
+      "name": "salesforce-flow-auditor",
       "source": {
         "source": "local",
-        "path": "./plugins/data360-ingestion-modeling"
+        "path": "./plugins/salesforce-flow-auditor"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -437,34 +497,10 @@
       "category": "Salesforce Platform and Analytics"
     },
     {
-      "name": "data360-query-insights",
+      "name": "salesforce-industry-playbook",
       "source": {
         "source": "local",
-        "path": "./plugins/data360-query-insights"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Salesforce Platform and Analytics"
-    },
-    {
-      "name": "data360-governance",
-      "source": {
-        "source": "local",
-        "path": "./plugins/data360-governance"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Salesforce Platform and Analytics"
-    },
-    {
-      "name": "agentforce-grounding",
-      "source": {
-        "source": "local",
-        "path": "./plugins/agentforce-grounding"
+        "path": "./plugins/salesforce-industry-playbook"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -473,10 +509,10 @@
       "category": "Agentforce"
     },
     {
-      "name": "data360-identity-resolution",
+      "name": "tableau-next-asset-create",
       "source": {
         "source": "local",
-        "path": "./plugins/data360-identity-resolution"
+        "path": "./plugins/tableau-next-asset-create"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -485,34 +521,10 @@
       "category": "Salesforce Platform and Analytics"
     },
     {
-      "name": "data360-segmentation-activation",
+      "name": "voice-ux",
       "source": {
         "source": "local",
-        "path": "./plugins/data360-segmentation-activation"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Salesforce Platform and Analytics"
-    },
-    {
-      "name": "prompt-template-build",
-      "source": {
-        "source": "local",
-        "path": "./plugins/prompt-template-build"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Agentforce"
-    },
-    {
-      "name": "agentforce-api-integrate",
-      "source": {
-        "source": "local",
-        "path": "./plugins/agentforce-api-integrate"
+        "path": "./plugins/voice-ux"
       },
       "policy": {
         "installation": "AVAILABLE",

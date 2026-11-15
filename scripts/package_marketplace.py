@@ -27,6 +27,7 @@ OPTIONAL_CATEGORIES = {"Agentforce", "Salesforce Platform and Analytics"}
 
 
 SHARED_REFERENCES = (
+    ("persona", "industry-patterns.md", "salesforce-industry-playbook"),
     ("persona", "industry-patterns.md", "agent-architecture"),
     ("persona", "industry-patterns.md", "conversation-design"),
     ("persona", "industry-patterns.md", "agentforce-generate"),

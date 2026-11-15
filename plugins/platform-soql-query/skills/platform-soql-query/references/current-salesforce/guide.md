@@ -12,6 +12,10 @@ Use this reference for product claims, security decisions, code generation, or o
 
 The following guidance was checked on 2026-11-15 through the official Labs MCP endpoint. It is a dated baseline, not a claim that every bundled reference or every Salesforce cloud has been exhaustively certified.
 
+## Existing customer environments
+
+For an existing org, ground changes in the customer’s current process, approved rules, data, access, integrations, and active automation. Industry patterns are hypotheses. Reuse current discovery evidence; if business fit or reuse is unresolved, use salesforce-industry-playbook when available or provide a bounded discovery brief. Do not force rediscovery for a known scoped fix. Preserve existing callers, test dependencies and side effects, and define rollback/reconciliation before consequential changes. No org access means provisional findings, not an empty or greenfield environment.
+
 # Apex guidance
 
 - Preserve an existing component API version unless an upgrade is in scope. For new components select a version supported by the target org/toolchain; inspect release-specific behavior rather than freezing every project at 66.0.

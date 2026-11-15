@@ -144,6 +144,27 @@
       "expected_primary": [
         "agent-architecture"
       ]
+    },
+    {
+      "id": "industry-existing",
+      "prompt": "Tailor Agentforce to our eight-year-old manufacturing org with custom warranty objects; decide what to reuse before building.",
+      "expected_primary": [
+        "salesforce-industry-playbook"
+      ]
+    },
+    {
+      "id": "industry-greenfield",
+      "prompt": "Discover which retail workflows we should build first in a new Salesforce implementation, given our franchise business model.",
+      "expected_primary": [
+        "salesforce-industry-playbook"
+      ]
+    },
+    {
+      "id": "industry-hybrid",
+      "prompt": "We merged two hotel brands and need discovery across their existing orgs before introducing one concierge.",
+      "expected_primary": [
+        "salesforce-industry-playbook"
+      ]
     }
   ]
 }

@@ -142,6 +142,10 @@
     "agentforce-api-integrate": [
       "agent",
       "integration"
+    ],
+    "salesforce-industry-playbook": [
+      "agent",
+      "platform"
     ]
   },
   "sources": {

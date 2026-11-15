@@ -1,0 +1,5 @@
+{
+	"$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+	"name": "platform-apex-test-run",
+	"description": "Run or analyze an existing Apex test suite in a selected Salesforce org. Return results, coverage, and failure causes. Use platform-apex-test-generate to author new tests."
+}

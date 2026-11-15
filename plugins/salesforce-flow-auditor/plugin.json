@@ -1,0 +1,5 @@
+{
+	"$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+	"name": "salesforce-flow-auditor",
+	"description": "Audit a Salesforce Flow design or XML for bulk behavior, execution context, limits, and deployment risk. Return findings. Use automation-flow-generate to build a Flow."
+}

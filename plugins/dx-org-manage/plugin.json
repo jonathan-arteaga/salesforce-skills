@@ -1,0 +1,5 @@
+{
+	"$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+	"name": "dx-org-manage",
+	"description": "Manage an explicitly selected Salesforce scratch org with Salesforce CLI. Return org lifecycle results. Use platform-metadata-deploy to deploy metadata."
+}

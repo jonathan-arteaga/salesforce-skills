@@ -1,0 +1,5 @@
+{
+	"$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+	"name": "platform-apex-logs-debug",
+	"description": "Diagnose Salesforce debug logs, failures, and governor limits. Return evidence and remediation options. Use platform-apex-test-run to execute an existing suite."
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "CRM Analytics Wave Generate"
+  short_description: "Build analytics recipes, datasets, and dashboards."
+  default_prompt: "Use $crm-analytics-wave-generate to build analytics recipes, datasets, and dashboards."

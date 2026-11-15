@@ -1,0 +1,4 @@
+interface:
+  display_name: "Data360 Schema Get"
+  short_description: "Inspect data objects and field definitions."
+  default_prompt: "Use $data360-schema-get to inspect data objects and field definitions."

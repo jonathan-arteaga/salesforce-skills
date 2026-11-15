@@ -1,0 +1,5 @@
+{
+	"$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+	"name": "agentforce-test",
+	"description": "Author, run, or analyze structured Agentforce test suites in an authorized environment. Return test specifications or results. Use agentforce-generate for authoring changes."
+}

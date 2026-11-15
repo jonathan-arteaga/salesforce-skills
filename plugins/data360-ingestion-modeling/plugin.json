@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "data360-ingestion-modeling",
+  "version": "1.0.0",
+  "description": "Build or troubleshoot Data Cloud / Data 360 ingestion, federation and DLO-to-DMO mapping workflows. Use for connector choices, keys, relationships, refresh, rejected records and source-to-target reconciliation. Not schema inventory alone, identity resolution, or audience activation."
+}

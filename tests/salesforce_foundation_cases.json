@@ -1,0 +1,149 @@
+{
+  "routing": [
+    {
+      "id": "sf-foundation-1",
+      "prompt": "Design a least-privilege Case access matrix for support users and explain why group muting did not hide a field.",
+      "expected_primary": [
+        "salesforce-access-design"
+      ]
+    },
+    {
+      "id": "sf-foundation-2",
+      "prompt": "Build a Data Cloud source-to-DMO mapping plan with keys, refresh, retry and reconciliation.",
+      "expected_primary": [
+        "data360-ingestion-modeling"
+      ]
+    },
+    {
+      "id": "sf-foundation-3",
+      "prompt": "Our Data360 customer spend SQL triples totals when joined to contact points. Fix the insight query.",
+      "expected_primary": [
+        "data360-query-insights"
+      ]
+    },
+    {
+      "id": "sf-foundation-4",
+      "prompt": "Review Data360 data spaces, masking and consent enforcement across cached dashboards and exports.",
+      "expected_primary": [
+        "data360-governance"
+      ]
+    },
+    {
+      "id": "sf-foundation-5",
+      "prompt": "Agentforce PDF chunks exist but answers are missing or stale. Diagnose retrieval and test citations per audience.",
+      "expected_primary": [
+        "agentforce-grounding"
+      ]
+    },
+    {
+      "id": "sf-foundation-6",
+      "prompt": "List all fields and types on my Customer DMO.",
+      "expected_primary": [
+        "data360-schema-get"
+      ]
+    },
+    {
+      "id": "sf-foundation-7",
+      "prompt": "Write SOQL to find Accounts with Contacts.",
+      "expected_primary": [
+        "platform-soql-query"
+      ]
+    },
+    {
+      "id": "sf-foundation-8",
+      "prompt": "Generate an Apex trigger for Case changes.",
+      "expected_primary": [
+        "platform-apex-generate"
+      ]
+    },
+    {
+      "id": "sf-foundation-9",
+      "prompt": "Create an agent with topics and custom actions.",
+      "expected_primary": [
+        "agentforce-generate"
+      ]
+    },
+    {
+      "id": "sf-foundation-10",
+      "prompt": "Build a CRM Analytics dashboard with a SAQL query.",
+      "expected_primary": [
+        "crm-analytics-wave-generate"
+      ]
+    },
+    {
+      "id": "sf-foundation-11",
+      "prompt": "Analyze an Agentforce session trace in Data360.",
+      "expected_primary": [
+        "agentforce-d360-analyze"
+      ]
+    },
+    {
+      "id": "sf-foundation-12",
+      "prompt": "Deploy existing metadata to my sandbox.",
+      "expected_primary": [
+        "platform-metadata-deploy"
+      ]
+    },
+    {
+      "id": "sf-foundation-13",
+      "prompt": "Configure Salesforce OAuth for a new external integration.",
+      "expected_primary": [
+        "integration-connectivity-connected-app-configure"
+      ]
+    },
+    {
+      "id": "sf-foundation-14",
+      "prompt": "Run my agent regression tests.",
+      "expected_primary": [
+        "agentforce-test"
+      ]
+    },
+    {
+      "id": "sf-foundation-15",
+      "prompt": "Explain what a primary key is in two sentences.",
+      "expected_primary": []
+    },
+    {
+      "id": "sf-foundation-16",
+      "prompt": "Design identity match and reconciliation rules for duplicate Data360 profiles without merging spouses who share email.",
+      "expected_primary": [
+        "data360-identity-resolution"
+      ]
+    },
+    {
+      "id": "sf-foundation-17",
+      "prompt": "Preview and activate a consent-filtered Data360 segment to an external destination.",
+      "expected_primary": [
+        "data360-segmentation-activation"
+      ]
+    },
+    {
+      "id": "sf-foundation-18",
+      "prompt": "Create a new Prompt Builder template version and compare responses before activating.",
+      "expected_primary": [
+        "prompt-template-build"
+      ]
+    },
+    {
+      "id": "sf-foundation-19",
+      "prompt": "Build an app integration using Agent API sessions and streaming responses.",
+      "expected_primary": [
+        "agentforce-api-integrate"
+      ]
+    },
+    {
+      "id": "sf-foundation-20",
+      "prompt": "Wire an already-active prompt template into my agent as an action.",
+      "expected_primary": [
+        "agentforce-generate"
+      ]
+    },
+    {
+      "id": "sf-foundation-21",
+      "prompt": "Design an agent architecture proposal; do not build it.",
+      "expected_primary": [
+        "agent-architecture"
+      ]
+    }
+  ]
+}

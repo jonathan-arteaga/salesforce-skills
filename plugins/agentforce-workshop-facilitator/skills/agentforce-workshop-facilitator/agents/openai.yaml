@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agentforce Workshop Facilitator"
+  short_description: "Prepare discovery workshops and capture useful outcomes."
+  default_prompt: "Use $agentforce-workshop-facilitator to prepare discovery workshops and capture useful outcomes."

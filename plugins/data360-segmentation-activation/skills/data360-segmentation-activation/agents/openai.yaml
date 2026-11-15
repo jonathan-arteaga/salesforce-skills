@@ -1,0 +1,4 @@
+interface:
+  display_name: "Data 360 Segmentation and Activation"
+  short_description: "Build and validate consent-aware audiences."
+  default_prompt: "Use $data360-segmentation-activation to build and validate consent-aware audiences."

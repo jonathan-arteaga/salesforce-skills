@@ -1,0 +1,49 @@
+[
+  {
+    "artifact": "forward-access-governance.md",
+    "skills": [
+      "salesforce-access-design",
+      "data360-governance"
+    ],
+    "prompt": "Design Support Case read and Status update on team records, no Diagnosis read. Profile and independent Billing set grant Diagnosis; Support group mutes it. Separately Data360 policy denial changed yesterday but a dashboard cache and prior export may retain data; consent revoked yesterday. No org connection. Produce drafts and tests only."
+  },
+  {
+    "artifact": "forward-ingestion-query.md",
+    "skills": [
+      "data360-ingestion-modeling",
+      "data360-query-insights"
+    ],
+    "prompt": "Two source CustomerId 42 values belong to different people; batch has null keys and repeats on retry, with existing downstream segments. Customer A orders 10 and 20 joined to three contact points total 90. Need a calculated insight; accepted deployment later failed asynchronously. No schema or org tools. Produce conditional drafts, recovery and test cases."
+  },
+  {
+    "artifact": "forward-grounding.md",
+    "skills": [
+      "agentforce-grounding"
+    ],
+    "prompt": "Upload finished and PDF chunks exist but answers alternate between stale policy and no information. One public article and one customer-A-only article. CLI lacks agent adl, no org connection, draft-only investigation and tests."
+  },
+  {
+    "artifact": "forward-qualified-keys.md",
+    "skills": [
+      "data360-ingestion-modeling",
+      "data360-query-insights"
+    ],
+    "prompt": "Synthetic Customers(Id,KeyQualifier,Name): (42,CRM,A),(42,ERP,B). Orders(OrderId,CustomerId,CustomerKeyQualifier,Amount): (1,42,CRM,10),(2,42,ERP,20). Current join is Customers.Id=Orders.CustomerId. No Salesforce schema or execution. Draft query, mapping review, expected totals and limits."
+  },
+  {
+    "artifact": "forward-identity-activation.md",
+    "skills": [
+      "data360-identity-resolution",
+      "data360-segmentation-activation"
+    ],
+    "prompt": "Two spouses share email/address but have distinct verified IDs; third misspelled record belongs to one spouse. Ruleset groups all three. Draft rules and audience preview: one opted out, one unknown consent, one with two contact points; target already scheduled. No org tools, do not publish."
+  },
+  {
+    "artifact": "forward-prompt-api.md",
+    "skills": [
+      "prompt-template-build",
+      "agentforce-api-integrate"
+    ],
+    "prompt": "Revise formerly active, now deactivated prompt for grounded case summaries and compare candidate. Design retry behavior after stream disconnects following a message that may create a Case; app wants automatic resend. No current API schema, runtime project or org; drafts/tests only, no activation or messages."
+  }
+]

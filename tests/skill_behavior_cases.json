@@ -1,0 +1,42 @@
+{
+  "routing": [
+    {
+      "id": "agent-metadata",
+      "prompt": "Inspect the deployed Salesforce agent metadata and map which actions it invokes.",
+      "expected_primary": [
+        "agentforce-architecture-analyze"
+      ]
+    },
+    {
+      "id": "agent-design",
+      "prompt": "Propose a new Agentforce architecture from this finalized capability list.",
+      "expected_primary": [
+        "agent-architecture"
+      ]
+    },
+    {
+      "id": "agent-session",
+      "prompt": "Trace this one Agentforce session in Data Cloud.",
+      "expected_primary": [
+        "agentforce-d360-analyze"
+      ]
+    },
+    {
+      "id": "agent-trends",
+      "prompt": "Investigate aggregate production Agentforce failures over the last month.",
+      "expected_primary": [
+        "agentforce-observe"
+      ]
+    },
+    {
+      "id": "no-skill",
+      "prompt": "What is 17 times 24? ",
+      "expected_primary": []
+    },
+    {
+      "id": "no-writing",
+      "prompt": "What does the word concise mean?",
+      "expected_primary": []
+    }
+  ]
+}

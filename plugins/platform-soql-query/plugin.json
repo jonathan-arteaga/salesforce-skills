@@ -1,0 +1,5 @@
+{
+	"$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+	"name": "platform-soql-query",
+	"description": "Write or optimize SOQL or SOSL using the available schema. Return the query and explain performance considerations. Use platform-data-manage for changes to records."
+}

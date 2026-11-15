@@ -1,0 +1,4 @@
+interface:
+  display_name: "Integration Connectivity Connected App Configure"
+  short_description: "Configure application OAuth connections."
+  default_prompt: "Use $integration-connectivity-connected-app-configure to configure application OAuth connections."

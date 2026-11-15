@@ -1,0 +1,4 @@
+interface:
+  display_name: "Experience LWC Generate"
+  short_description: "Build Lightning web components and their tests."
+  default_prompt: "Use $experience-lwc-generate to build Lightning web components and their tests."

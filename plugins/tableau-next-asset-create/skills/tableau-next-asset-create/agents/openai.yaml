@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tableau Next Asset Create"
+  short_description: "Build semantic models, visualizations, and dashboards."
+  default_prompt: "Use $tableau-next-asset-create to build semantic models, visualizations, and dashboards."

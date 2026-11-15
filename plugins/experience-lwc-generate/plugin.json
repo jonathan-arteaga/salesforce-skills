@@ -1,0 +1,5 @@
+{
+	"$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+	"name": "experience-lwc-generate",
+	"description": "Build or review Lightning Web Components and their Jest tests. Return components and validation. Use platform-apex-generate for Apex implementation."
+}

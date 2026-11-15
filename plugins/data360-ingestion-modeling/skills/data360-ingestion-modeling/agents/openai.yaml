@@ -1,0 +1,4 @@
+interface:
+  display_name: "Data 360 Ingestion and Modeling"
+  short_description: "Design data ingestion and DLO-to-DMO mappings."
+  default_prompt: "Use $data360-ingestion-modeling to design data ingestion and DLO-to-DMO mappings."

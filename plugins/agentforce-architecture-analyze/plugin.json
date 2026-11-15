@@ -1,0 +1,5 @@
+{
+	"$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+	"name": "agentforce-architecture-analyze",
+	"description": "Inspect design-time metadata for a named Agentforce agent. Return an architecture snapshot and invocation graph. Use agentforce-d360-analyze for runtime sessions."
+}

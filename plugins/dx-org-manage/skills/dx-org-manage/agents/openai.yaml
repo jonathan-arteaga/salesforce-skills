@@ -1,0 +1,4 @@
+interface:
+  display_name: "DX Org Manage"
+  short_description: "Manage development and scratch organizations."
+  default_prompt: "Use $dx-org-manage to manage development and scratch organizations."

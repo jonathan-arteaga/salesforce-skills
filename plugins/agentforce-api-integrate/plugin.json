@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "agentforce-api-integrate",
+  "version": "1.0.0",
+  "description": "Build or troubleshoot an application integration with the Salesforce Agent API: authentication, session creation, synchronous or streaming messages, feedback and session end. Use for application-to-agent lifecycle and failure recovery. Not agent authoring, generic REST integrations, or voice-channel configuration."
+}

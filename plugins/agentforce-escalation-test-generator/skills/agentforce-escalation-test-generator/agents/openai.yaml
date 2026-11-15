@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agentforce Escalation Test Generator"
+  short_description: "Build routing and escalation test scenarios."
+  default_prompt: "Use $agentforce-escalation-test-generator to build routing and escalation test scenarios."

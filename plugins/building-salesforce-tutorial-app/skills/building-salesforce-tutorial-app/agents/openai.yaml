@@ -1,0 +1,4 @@
+interface:
+  display_name: "Building Salesforce Tutorial App"
+  short_description: "Create interactive technical setup guides."
+  default_prompt: "Use $building-salesforce-tutorial-app to create interactive technical setup guides."

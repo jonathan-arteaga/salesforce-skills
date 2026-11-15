@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agentforce API Integration"
+  short_description: "Integrate Agent API sessions and streaming safely."
+  default_prompt: "Use $agentforce-api-integrate to integrate Agent API sessions and streaming safely."

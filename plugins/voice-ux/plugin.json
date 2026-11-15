@@ -1,0 +1,5 @@
+{
+	"$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+	"name": "voice-ux",
+	"description": "Adapt an existing Agent Script for voice casting, voice tuning, prosody, audio tags, pronunciation, STT bias, and `modality voice:`. Return a voice brief and authorized script changes. Use persona for character and linguistic style."
+}

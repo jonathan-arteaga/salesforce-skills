@@ -1,0 +1,4 @@
+interface:
+  display_name: "Platform Apex Test Generate"
+  short_description: "Write Apex tests and test-data factories."
+  default_prompt: "Use $platform-apex-test-generate to write Apex tests and test-data factories."

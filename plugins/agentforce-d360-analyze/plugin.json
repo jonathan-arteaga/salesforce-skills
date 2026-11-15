@@ -1,0 +1,5 @@
+{
+	"$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+	"name": "agentforce-d360-analyze",
+	"description": "Find or trace an individual Agentforce session in Data Cloud. Return a session timeline and evidence. Use agentforce-observe for aggregate production trends and alert management."
+}

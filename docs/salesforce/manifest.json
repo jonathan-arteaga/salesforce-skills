@@ -1,0 +1,353 @@
+{
+  "checked_on": "2026-11-15",
+  "mcp_endpoint": "https://salesforce-docs-76258744c9d7.herokuapp.com/api/mcp",
+  "skills": {
+    "agent-architecture": [
+      "agent"
+    ],
+    "agent-improvement-orchestrator": [
+      "agent",
+      "observe"
+    ],
+    "agentforce-architecture-analyze": [
+      "agent"
+    ],
+    "agentforce-config-review": [
+      "agent",
+      "voice"
+    ],
+    "agentforce-d360-analyze": [
+      "agent",
+      "data",
+      "observe"
+    ],
+    "agentforce-escalation-test-generator": [
+      "agent"
+    ],
+    "agentforce-generate": [
+      "agent"
+    ],
+    "agentforce-observe": [
+      "agent",
+      "data",
+      "observe"
+    ],
+    "agentforce-technical-design-doc": [
+      "agent"
+    ],
+    "agentforce-test": [
+      "agent"
+    ],
+    "agentforce-workshop-facilitator": [
+      "agent"
+    ],
+    "conversation-design": [
+      "agent"
+    ],
+    "persona": [
+      "agent"
+    ],
+    "regulated-industry-agents-review": [
+      "agent",
+      "voice"
+    ],
+    "voice-ux": [
+      "agent",
+      "voice"
+    ],
+    "automation-flow-generate": [
+      "flow"
+    ],
+    "building-salesforce-tutorial-app": [
+      "platform"
+    ],
+    "crm-analytics-wave-generate": [
+      "analytics"
+    ],
+    "data360-schema-get": [
+      "data"
+    ],
+    "dx-org-manage": [
+      "platform"
+    ],
+    "experience-lwc-generate": [
+      "lwc"
+    ],
+    "integration-connectivity-connected-app-configure": [
+      "integration"
+    ],
+    "integration-connectivity-generate": [
+      "integration"
+    ],
+    "platform-apex-generate": [
+      "apex"
+    ],
+    "platform-apex-logs-debug": [
+      "apex"
+    ],
+    "platform-apex-test-generate": [
+      "apex"
+    ],
+    "platform-apex-test-run": [
+      "apex"
+    ],
+    "platform-custom-field-generate": [
+      "platform"
+    ],
+    "platform-custom-object-generate": [
+      "platform"
+    ],
+    "platform-data-manage": [
+      "platform"
+    ],
+    "platform-metadata-deploy": [
+      "platform"
+    ],
+    "platform-soql-query": [
+      "apex"
+    ],
+    "salesforce-flow-auditor": [
+      "flow"
+    ],
+    "tableau-next-asset-create": [
+      "data",
+      "analytics"
+    ],
+    "salesforce-access-design": [
+      "platform",
+      "apex"
+    ],
+    "data360-ingestion-modeling": [
+      "data"
+    ],
+    "data360-query-insights": [
+      "data"
+    ],
+    "data360-governance": [
+      "data"
+    ],
+    "agentforce-grounding": [
+      "agent",
+      "data"
+    ],
+    "data360-identity-resolution": [
+      "data"
+    ],
+    "data360-segmentation-activation": [
+      "data"
+    ],
+    "prompt-template-build": [
+      "agent"
+    ],
+    "agentforce-api-integrate": [
+      "agent",
+      "integration"
+    ]
+  },
+  "sources": {
+    "agent": [
+      {
+        "title": "Agent Execution Context and Data Access by Type",
+        "url": "https://help.salesforce.com/s/articleView?id=ai.agent_execution_data.htm&release=264.0.0&type=5",
+        "document_path": "ai/264-0-0/agent_execution_data.html"
+      },
+      {
+        "title": "Data Masking Limitations in Agentforce",
+        "url": "https://help.salesforce.com/s/articleView?id=ai.agent_trust_data_masking.htm&release=264.0.0&type=5",
+        "document_path": "ai/264-0-0/agent_trust_data_masking.html"
+      },
+      {
+        "title": "Agent Script Pattern: Subagent Transitions",
+        "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-patterns-transitions.html",
+        "document_path": "genai/agentforce/guides/agentforce/agent-script/patterns/ascript-patterns-transitions.html"
+      },
+      {
+        "title": "Agentforce Testing Center",
+        "url": "https://help.salesforce.com/s/articleView?id=ai.agent_testing_center.htm&release=264.0.0&type=5",
+        "document_path": "ai/264-0-0/agent_testing_center.html"
+      },
+      {
+        "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/agent-script.html",
+        "document_path": "genai/agentforce/guides/agentforce/agent-script/agent-script.html"
+      },
+      {
+        "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-ref-instructions.html",
+        "document_path": "genai/agentforce/guides/agentforce/agent-script/reference/ascript-ref-instructions.html"
+      },
+      {
+        "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-patterns.html",
+        "document_path": "genai/agentforce/guides/agentforce/agent-script/patterns/ascript-patterns.html"
+      },
+      {
+        "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-patterns-system-overrides.html",
+        "document_path": "genai/agentforce/guides/agentforce/agent-script/patterns/ascript-patterns-system-overrides.html"
+      },
+      {
+        "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-ref-before-after-reasoning.html",
+        "document_path": "genai/agentforce/guides/agentforce/agent-script/reference/ascript-ref-before-after-reasoning.html"
+      },
+      {
+        "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-blocks.html",
+        "document_path": "genai/agentforce/guides/agentforce/agent-script/ascript-blocks.html"
+      },
+      {
+        "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-flow.html",
+        "document_path": "genai/agentforce/guides/agentforce/agent-script/ascript-flow.html"
+      }
+    ],
+    "voice": [
+      {
+        "title": "Turn on Voice Call Recording and Transcription When Using Real-Time Streaming",
+        "url": "https://help.salesforce.com/s/articleView?id=ai.agent_record_voice_calls_realtime_streaming.htm&release=264.0.0&type=5",
+        "document_path": "ai/264-0-0/agent_record_voice_calls_realtime_streaming.html"
+      },
+      {
+        "title": "Agentforce Voice Considerations",
+        "url": "https://help.salesforce.com/s/articleView?id=ai.agentforce_voice_considerations.htm&release=264.0.0&type=5",
+        "document_path": "ai/264-0-0/agentforce_voice_considerations.html"
+      }
+    ],
+    "data": [
+      {
+        "title": "Object Model in Data 360",
+        "url": "https://developer.salesforce.com/docs/data/data-cloud-dev/guide/dc-object-model.html",
+        "document_path": "data-cloud/data-cloud-dev/guides/dc-object-model.html"
+      },
+      {
+        "title": "Secure Your Data with Data Spaces",
+        "url": "https://help.salesforce.com/s/articleView?id=data.c360_a_data_spaces_secure_data.htm&release=264.0.0&type=5",
+        "document_path": "data/264-0-0/c360_a_data_spaces_secure_data.html"
+      },
+      {
+        "title": "Data 360 Connect API",
+        "url": "https://developer.salesforce.com/docs/data/connectapi/references/spec",
+        "document_path": "data-cloud/connectapi/references/generated-api-specs/spec.html"
+      },
+      {
+        "title": "Request Data With Query V2",
+        "url": "https://developer.salesforce.com/docs/data/data-cloud-query-guide/references/data-cloud-query-api-reference/c360a-api-query-v2.html",
+        "document_path": "data-cloud/data-cloud-query-guide/references/data-cloud-query-api-reference/query-services/query-api-v2/c360a-api-query-v2.html"
+      },
+      {
+        "url": "https://help.salesforce.com/s/articleView?id=data.c360_a_map_custom_data_model_objects.htm&release=264.0.0&type=5",
+        "document_path": "data/264-0-0/c360_a_map_custom_data_model_objects.html"
+      },
+      {
+        "url": "https://developer.salesforce.com/docs/data/data-cloud-query-guide/guide/write-simple-query.html",
+        "document_path": "data-cloud/data-cloud-query-guide/guides/get-started-dc-sql/write-simple-query.html"
+      }
+    ],
+    "observe": [
+      {
+        "title": "Set Up Agentforce Session Tracing",
+        "url": "https://help.salesforce.com/s/articleView?id=ai.generative_ai_session_trace_setup.htm&release=264.0.0&type=5",
+        "document_path": "ai/264-0-0/generative_ai_session_trace_setup.html"
+      },
+      {
+        "title": "Agentforce Session Tracing",
+        "url": "https://help.salesforce.com/s/articleView?id=ai.generative_ai_session_trace.htm&release=264.0.0&type=5",
+        "document_path": "ai/264-0-0/generative_ai_session_trace.html"
+      }
+    ],
+    "apex": [
+      {
+        "title": "Apex Security and Sharing Model",
+        "url": "https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_security_sharing_chapter.htm",
+        "document_path": "apexcode/apex_security_sharing_chapter.html"
+      },
+      {
+        "title": "Set an Access Mode for Database Operations",
+        "url": "https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_enforce_usermode.htm",
+        "document_path": "apexcode/apex_classes_enforce_usermode.html"
+      },
+      {
+        "title": "Dynamic SOQL",
+        "url": "https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_dynamic_soql.htm",
+        "document_path": "apexcode/apex_dynamic_soql.html"
+      }
+    ],
+    "lwc": [
+      {
+        "title": "Secure Apex Classes",
+        "url": "https://developer.salesforce.com/docs/platform/lwc/guide/apex-security.html",
+        "document_path": "lwc/lwc/guides/apex/apex-security.html"
+      }
+    ],
+    "flow": [
+      {
+        "title": "Before-Save Record-Triggered Flows",
+        "url": "https://help.salesforce.com/s/articleView?id=platform.flow_concepts_trigger_record.htm&release=264.0.0&type=5",
+        "document_path": "platform/264-0-0/flow_concepts_trigger_record.html"
+      },
+      {
+        "title": "Decide Between Before-Save and After-Save Record-Triggered Flows",
+        "url": "https://help.salesforce.com/s/articleView?id=platform.automate_flow_build_get_started_record_triggered_before_or_after_save.htm&release=264.0.0&type=5",
+        "document_path": "platform/264-0-0/automate_flow_build_get_started_record_triggered_before_or_after_save.html"
+      },
+      {
+        "title": "Agent Execution Context and Data Access by Type",
+        "url": "https://help.salesforce.com/s/articleView?id=ai.agent_execution_data.htm&release=264.0.0&type=5",
+        "document_path": "ai/264-0-0/agent_execution_data.html"
+      },
+      {
+        "title": "Flow",
+        "url": "https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_visual_workflow.htm",
+        "document_path": "api_meta/meta_visual_workflow.html"
+      }
+    ],
+    "integration": [
+      {
+        "title": "ConnectedApp",
+        "url": "https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_connectedapp.htm",
+        "document_path": "api_meta/meta_connectedapp.html"
+      },
+      {
+        "title": "Create Named Credentials and External Credentials",
+        "url": "https://help.salesforce.com/s/articleView?id=xcloud.nc_named_creds_and_ext_creds.htm&release=264.0.0&type=5",
+        "document_path": "xcloud/264-0-0/nc_named_creds_and_ext_creds.html"
+      },
+      {
+        "title": "Enable User External Credentials",
+        "url": "https://help.salesforce.com/s/articleView?id=xcloud.nc_user_external_credentials.htm&release=264.0.0&type=5",
+        "document_path": "xcloud/264-0-0/nc_user_external_credentials.html"
+      }
+    ],
+    "analytics": [
+      {
+        "title": "Set Up Dataset Security to Control Access to Rows",
+        "url": "https://help.salesforce.com/s/articleView?id=analytics.bi_security_datasets_row_level.htm&release=264.0.0&type=5",
+        "document_path": "analytics/264-0-0/bi_security_datasets_row_level.html"
+      },
+      {
+        "title": "Data Governance and Sharing in Tableau Next",
+        "url": "https://help.salesforce.com/s/articleView?id=analytics.tua_governance.htm&release=264.0.0&type=5",
+        "document_path": "analytics/264-0-0/tua_governance.html"
+      }
+    ],
+    "platform": [
+      {
+        "title": "CustomObject",
+        "url": "https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/customobject.htm",
+        "document_path": "api_meta/customobject.html"
+      },
+      {
+        "title": "CustomField",
+        "url": "https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/customfield.htm",
+        "document_path": "api_meta/customfield.html"
+      },
+      {
+        "title": "Running a Subset of Tests in a Deployment",
+        "url": "https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_deploy_run_specific_tests.htm",
+        "document_path": "api_meta/meta_deploy_run_specific_tests.html"
+      },
+      {
+        "url": "https://help.salesforce.com/s/articleView?id=platform.users_profiles_fls.htm&release=264.0.0&type=5",
+        "document_path": "platform/264-0-0/users_profiles_fls.html"
+      },
+      {
+        "url": "https://help.salesforce.com/s/articleView?id=platform.users_profiles_object_perms.htm&release=264.0.0&type=5",
+        "document_path": "platform/264-0-0/users_profiles_object_perms.html"
+      }
+    ]
+  }
+}

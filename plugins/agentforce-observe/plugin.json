@@ -1,0 +1,5 @@
+{
+	"$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+	"name": "agentforce-observe",
+	"description": "Investigate aggregate Agentforce production behavior and manage authorized monitoring alerts. Return findings and scope. Use agentforce-d360-analyze for single-session tracing."
+}

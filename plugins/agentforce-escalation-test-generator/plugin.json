@@ -1,0 +1,5 @@
+{
+	"$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+	"name": "agentforce-escalation-test-generator",
+	"description": "Use Agentforce routing metadata to author escalation scenarios and expected outcomes. Return a test plan and fixtures. Use agentforce-test for execution."
+}

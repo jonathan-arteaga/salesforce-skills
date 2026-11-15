@@ -1,0 +1,4 @@
+interface:
+  display_name: "Data 360 Identity Resolution"
+  short_description: "Design matching and reconciliation rules safely."
+  default_prompt: "Use $data360-identity-resolution to design matching and reconciliation rules safely."

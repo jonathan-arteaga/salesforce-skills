@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agentforce Test"
+  short_description: "Create and run functional and security agent tests."
+  default_prompt: "Use $agentforce-test to create and run functional and security agent tests."

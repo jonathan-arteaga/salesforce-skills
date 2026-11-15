@@ -1,0 +1,4 @@
+interface:
+  display_name: "Data 360 Query and Insights"
+  short_description: "Build and verify Data 360 SQL and insights."
+  default_prompt: "Use $data360-query-insights to build and verify Data 360 SQL and insights."

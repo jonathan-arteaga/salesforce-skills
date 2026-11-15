@@ -1,0 +1,5 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "agentforce-generate",
+  "description": "Create, build, modify, review, or repair Salesforce agents with topics and actions using Agent Script and aiAuthoringBundle metadata. Return implementation artifacts and validation evidence. Use agent-architecture for design-only proposals, agentforce-grounding for retrieval diagnosis, and agentforce-test for test suites."
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Salesforce Flow Auditor"
+  short_description: "Review flow design, limits, security, and errors."
+  default_prompt: "Use $salesforce-flow-auditor to review flow design, limits, security, and errors."

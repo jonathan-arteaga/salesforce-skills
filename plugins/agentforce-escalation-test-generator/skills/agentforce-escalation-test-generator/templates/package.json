@@ -1,0 +1,17 @@
+{
+  "name": "agentforce-escalation-test-plan",
+  "version": "1.0.0",
+  "description": "Agentforce escalation test plan",
+  "scripts": {
+    "fetch-metadata": "bash scripts/fetch-metadata.sh"
+  },
+  "keywords": [
+    "salesforce",
+    "agentforce",
+    "testing",
+    "escalation",
+    "omni-channel"
+  ],
+  "author": "",
+  "license": "ISC"
+}

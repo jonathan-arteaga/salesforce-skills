@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agentforce Observe"
+  short_description: "Investigate agent behavior and health alerts."
+  default_prompt: "Use $agentforce-observe to investigate agent behavior and health alerts."

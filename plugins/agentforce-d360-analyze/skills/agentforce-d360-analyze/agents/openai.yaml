@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agentforce D360 Analyze"
+  short_description: "Inspect an agent session using Data Cloud records."
+  default_prompt: "Use $agentforce-d360-analyze to inspect an agent session using Data Cloud records."

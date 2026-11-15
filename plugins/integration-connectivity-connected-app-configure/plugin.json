@@ -1,0 +1,5 @@
+{
+	"$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+	"name": "integration-connectivity-connected-app-configure",
+	"description": "Configure Salesforce Connected Apps or External Client Apps and OAuth. Return app metadata and validation. Use integration-connectivity-generate for outbound integration plumbing."
+}

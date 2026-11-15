@@ -1,0 +1,4 @@
+interface:
+  display_name: "Platform Apex Logs Debug"
+  short_description: "Diagnose debug logs and governor-limit failures."
+  default_prompt: "Use $platform-apex-logs-debug to diagnose debug logs and governor-limit failures."

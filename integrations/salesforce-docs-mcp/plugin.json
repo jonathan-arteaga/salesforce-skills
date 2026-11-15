@@ -1,0 +1,17 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "salesforce-docs-mcp",
+  "version": "0.1.0",
+  "description": "Search and retrieve official Salesforce documentation through the Agentforce Labs Docs MCP server.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Salesforce Docs MCP",
+        "shortDescription": "Search Salesforce docs",
+        "longDescription": "Search official Salesforce documentation and retrieve full pages from the Salesforce Docs MCP server published by Agentforce Labs.",
+        "capabilities": [],
+        "defaultPrompt": "Search Salesforce documentation for current guidance on my question."
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "checked_on": "2026-11-15",
+  "baseline_commit": "fc3f7026fdb58d83cf32a2a00d8c809a3e5896ca",
+  "sources": [
+    {
+      "key": "access",
+      "url": "https://help.salesforce.com/s/articleView?id=platform.perm_set_groups.htm&release=264.0.0&type=5",
+      "document_path": "platform/264-0-0/perm_set_groups.html",
+      "title": "Permission Set Groups"
+    },
+    {
+      "key": "ingestion-detail",
+      "url": "https://help.salesforce.com/s/articleView?id=data.c360_a_data_ingestion.htm&release=264.0.0&type=5",
+      "document_path": "data/264-0-0/c360_a_data_ingestion.html",
+      "title": "Connect Data"
+    },
+    {
+      "key": "calculated",
+      "url": "https://help.salesforce.com/s/articleView?id=data.c360_a_create_a_calculated_insights_sql_function.htm&release=264.0.0&type=5",
+      "document_path": "data/264-0-0/c360_a_create_a_calculated_insights_sql_function.html",
+      "title": "Use SQL to Create Insights"
+    },
+    {
+      "key": "data-governance",
+      "url": "https://help.salesforce.com/s/articleView?id=data.c360_a_policy_enforcement_in_datacloud.htm&release=264.0.0&type=5",
+      "document_path": "data/264-0-0/c360_a_policy_enforcement_in_datacloud.html",
+      "title": "Policy Enforcement in Data 360"
+    },
+    {
+      "key": "grounding-detail",
+      "url": "https://help.salesforce.com/s/articleView?id=ai.data_library_custom_retriever.htm&release=264.0.0&type=5",
+      "document_path": "ai/264-0-0/data_library_custom_retriever.html",
+      "title": "Use a Custom Retriever"
+    },
+    {
+      "key": "identity",
+      "url": "https://help.salesforce.com/s/articleView?id=data.c360_a_identity_resolution_ruleset.htm&release=264.0.0&type=5",
+      "document_path": "data/264-0-0/c360_a_identity_resolution_ruleset.html",
+      "title": "Identity Resolution Rulesets"
+    },
+    {
+      "key": "activation",
+      "url": "https://help.salesforce.com/s/articleView?id=data.c360_a_create_data_cloud_activation.htm&release=264.0.0&type=5",
+      "document_path": "data/264-0-0/c360_a_create_data_cloud_activation.html",
+      "title": "Create an Activation for a Data 360 Target"
+    },
+    {
+      "key": "consent",
+      "url": "https://help.salesforce.com/s/articleView?id=data.c360_a_using_consent_preferences_in_segmentation.htm&release=264.0.0&type=5",
+      "document_path": "data/264-0-0/c360_a_using_consent_preferences_in_segmentation.html",
+      "title": "Using Consent Preferences in Segmentation"
+    },
+    {
+      "key": "prompts",
+      "url": "https://help.salesforce.com/s/articleView?id=ai.prompt_builder_use_multiple_versions.htm&release=264.0.0&type=5",
+      "document_path": "ai/264-0-0/prompt_builder_use_multiple_versions.html",
+      "title": "Use Multiple Versions of a Prompt Template"
+    },
+    {
+      "key": "agent-api-detail",
+      "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/agent-api-lifecycle.html",
+      "document_path": "genai/agentforce/guides/agentforce/agent-api/agent-api-lifecycle.html",
+      "title": "Agent API Session Lifecycle"
+    },
+    {
+      "key": "events",
+      "url": "https://developer.salesforce.com/docs/platform/pub-sub-api/guide/event-message-durability.html",
+      "document_path": "event-bus/pub-sub-api/guides/event-message-durability.html",
+      "title": "Event Message Durability"
+    },
+    {
+      "key": "service",
+      "url": "https://help.salesforce.com/s/articleView?id=service.omnichannel_route_to_ai_agent_target.htm&release=264.0.0&type=5",
+      "document_path": "service/264-0-0/omnichannel_route_to_ai_agent_target.html",
+      "title": "Route to an Agentforce Service Agent"
+    },
+    {
+      "key": "solution",
+      "url": "https://architect.salesforce.com/docs/architect/well-architected/guide/framework.html",
+      "document_path": "well-architected/guides/framework.html",
+      "title": "Well-Architected Framework"
+    },
+    {
+      "key": "knowledge",
+      "url": "https://help.salesforce.com/s/articleView?id=service.knowledge_category_assignment.htm&release=264.0.0&type=5",
+      "document_path": "service/264-0-0/knowledge_category_assignment.html",
+      "title": "Modify Default Category Group Assignments for Articles"
+    },
+    {
+      "key": "sales",
+      "url": "https://help.salesforce.com/s/articleView?id=sales.lead_conversion_mapping.htm&release=264.0.0&type=5",
+      "document_path": "sales/264-0-0/lead_conversion_mapping.html",
+      "title": "Lead Conversion Field Mapping"
+    },
+    {
+      "key": "experience",
+      "url": "https://help.salesforce.com/s/articleView?id=experience.networks_security.htm&release=264.0.0&type=5",
+      "document_path": "experience/264-0-0/networks_security.html",
+      "title": "Secure Your Experience Cloud Site"
+    }
+  ]
+}

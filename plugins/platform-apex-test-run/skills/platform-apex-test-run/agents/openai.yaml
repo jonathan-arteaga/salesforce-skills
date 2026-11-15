@@ -1,0 +1,4 @@
+interface:
+  display_name: "Platform Apex Test Run"
+  short_description: "Run Apex tests and inspect coverage."
+  default_prompt: "Use $platform-apex-test-run to run Apex tests and inspect coverage."

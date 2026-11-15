@@ -1,0 +1,86 @@
+[
+  {
+    "id": "sf-foundation-1",
+    "primary_skill": "salesforce-access-design"
+  },
+  {
+    "id": "sf-foundation-2",
+    "primary_skill": "data360-ingestion-modeling"
+  },
+  {
+    "id": "sf-foundation-3",
+    "primary_skill": "data360-query-insights"
+  },
+  {
+    "id": "sf-foundation-4",
+    "primary_skill": "data360-governance"
+  },
+  {
+    "id": "sf-foundation-5",
+    "primary_skill": "agentforce-grounding"
+  },
+  {
+    "id": "sf-foundation-6",
+    "primary_skill": "data360-schema-get"
+  },
+  {
+    "id": "sf-foundation-7",
+    "primary_skill": "platform-soql-query"
+  },
+  {
+    "id": "sf-foundation-8",
+    "primary_skill": "platform-apex-generate"
+  },
+  {
+    "id": "sf-foundation-9",
+    "primary_skill": "agentforce-generate"
+  },
+  {
+    "id": "sf-foundation-10",
+    "primary_skill": "crm-analytics-wave-generate"
+  },
+  {
+    "id": "sf-foundation-11",
+    "primary_skill": "agentforce-d360-analyze"
+  },
+  {
+    "id": "sf-foundation-12",
+    "primary_skill": "platform-metadata-deploy"
+  },
+  {
+    "id": "sf-foundation-13",
+    "primary_skill": "integration-connectivity-connected-app-configure"
+  },
+  {
+    "id": "sf-foundation-14",
+    "primary_skill": "agentforce-test"
+  },
+  {
+    "id": "sf-foundation-15",
+    "primary_skill": null
+  },
+  {
+    "id": "sf-foundation-16",
+    "primary_skill": "data360-identity-resolution"
+  },
+  {
+    "id": "sf-foundation-17",
+    "primary_skill": "data360-segmentation-activation"
+  },
+  {
+    "id": "sf-foundation-18",
+    "primary_skill": "prompt-template-build"
+  },
+  {
+    "id": "sf-foundation-19",
+    "primary_skill": "agentforce-api-integrate"
+  },
+  {
+    "id": "sf-foundation-20",
+    "primary_skill": "agentforce-generate"
+  },
+  {
+    "id": "sf-foundation-21",
+    "primary_skill": "agent-architecture"
+  }
+]

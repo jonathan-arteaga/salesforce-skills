@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Architecture"
+  short_description: "Plan agent structure, actions, and routing."
+  default_prompt: "Use $agent-architecture to plan agent structure, actions, and routing."

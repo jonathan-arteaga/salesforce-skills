@@ -1,0 +1,4 @@
+interface:
+  display_name: "Regulated Industry Agents Review"
+  short_description: "Review agent guardrails for regulated use cases."
+  default_prompt: "Use $regulated-industry-agents-review to review agent guardrails for regulated use cases."

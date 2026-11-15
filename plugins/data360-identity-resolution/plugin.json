@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "data360-identity-resolution",
+  "version": "1.0.0",
+  "description": "Design, configure or troubleshoot Data Cloud / Data 360 identity resolution rulesets, match rules and field reconciliation. Use for false merges, split profiles, source lineage and ruleset evaluation. Not ingestion-key repair, CRM record merging, or schema inventory."
+}

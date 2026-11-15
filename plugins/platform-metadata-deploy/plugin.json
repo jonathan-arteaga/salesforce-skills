@@ -1,0 +1,5 @@
+{
+	"$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+	"name": "platform-metadata-deploy",
+	"description": "Validate or deploy Salesforce metadata to an authorized target and report results. Use dx-org-manage for org lifecycle and the relevant authoring skill for source changes."
+}

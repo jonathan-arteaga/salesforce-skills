@@ -1,0 +1,22 @@
+# Environment variables
+.env
+.env.local
+
+# Test results with sensitive data
+results/
+
+# Node modules
+node_modules/
+
+# Logs
+*.log
+logs/
+
+# Salesforce session files
+.sfdx/
+.sf/
+
+# Temporary files
+*.tmp
+*.temp
+.DS_Store

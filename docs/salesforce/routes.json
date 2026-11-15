@@ -1,0 +1,56 @@
+{
+  "salesforce-access-design": [
+    "data360-governance",
+    "agentforce-test",
+    "platform-metadata-deploy"
+  ],
+  "data360-ingestion-modeling": [
+    "data360-schema-get",
+    "data360-governance",
+    "data360-query-insights"
+  ],
+  "data360-query-insights": [
+    "platform-soql-query",
+    "crm-analytics-wave-generate",
+    "data360-schema-get",
+    "data360-governance"
+  ],
+  "data360-governance": [
+    "salesforce-access-design",
+    "data360-ingestion-modeling",
+    "agentforce-grounding"
+  ],
+  "agentforce-grounding": [
+    "agentforce-generate",
+    "agentforce-test",
+    "data360-governance",
+    "salesforce-access-design"
+  ],
+  "regulated-industry-agents-review": [
+    "agentforce-config-review",
+    "agentforce-test"
+  ],
+  "data360-schema-get": [
+    "data360-ingestion-modeling"
+  ],
+  "data360-identity-resolution": [
+    "data360-ingestion-modeling",
+    "data360-governance",
+    "data360-query-insights"
+  ],
+  "data360-segmentation-activation": [
+    "data360-governance",
+    "data360-query-insights",
+    "data360-identity-resolution"
+  ],
+  "prompt-template-build": [
+    "agentforce-generate",
+    "agentforce-grounding",
+    "agentforce-test"
+  ],
+  "agentforce-api-integrate": [
+    "integration-connectivity-connected-app-configure",
+    "integration-connectivity-generate",
+    "agentforce-test"
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Platform Custom Field Generate"
+  short_description: "Create and validate custom field metadata."
+  default_prompt: "Use $platform-custom-field-generate to create and validate custom field metadata."

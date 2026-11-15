@@ -1,0 +1,5 @@
+{
+	"$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+	"name": "persona",
+	"description": "Define or review an Agentforce persona. Return a character contract and calibration examples. Route guardrail design to agent-architecture and dialogues to conversation-design. For voice casting, prosody, audio tags, pronunciation, STT bias, or `modality voice:`, use `voice-ux`."
+}

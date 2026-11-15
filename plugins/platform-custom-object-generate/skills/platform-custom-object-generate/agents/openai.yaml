@@ -1,0 +1,4 @@
+interface:
+  display_name: "Platform Custom Object Generate"
+  short_description: "Create and validate custom object metadata."
+  default_prompt: "Use $platform-custom-object-generate to create and validate custom object metadata."

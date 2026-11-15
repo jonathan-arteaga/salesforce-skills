@@ -1,0 +1,4 @@
+interface:
+  display_name: "Platform SOQL Query"
+  short_description: "Write and improve SOQL and SOSL queries."
+  default_prompt: "Use $platform-soql-query to write and improve SOQL and SOSL queries."

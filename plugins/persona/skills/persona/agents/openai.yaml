@@ -1,0 +1,4 @@
+interface:
+  display_name: "Persona"
+  short_description: "Define an agent\u2019s identity, language, and tone."
+  default_prompt: "Use $persona to define an agent\u2019s identity, language, and tone."

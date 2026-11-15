@@ -1,0 +1,97 @@
+{
+  "_comment": "Sample loop state from a completed 1-iteration run. Illustrative data only.",
+  "version": "1.3.0",
+  "agentName": "Acme_Support_Agent",
+  "projectRoot": "/Users/dev/projects/acme-support",
+  "orgUsername": "dev@acme-support.example.com",
+  "orgId": "00Dxx0000000000EAA",
+  "orgAlias": "myDevOrg",
+  "runKey": "Acme_Support_Agent__00Dxx0000000000EAA",
+  "settings": { "mode": "full_ownership", "maxIterations": 3 },
+  "consents": { "deploy": true, "gitCommit": true, "gitRevert": true },
+  "startedAt": "2026-05-30T14:30:00.000Z",
+  "lastUpdatedAt": "2026-05-30T15:05:00.000Z",
+  "currentPhase": "COMPLETE",
+  "iteration": 1,
+  "gitAvailable": true,
+  "baselineTestResults": {
+    "passRate": 0.67,
+    "passed": 6,
+    "total": 9,
+    "timestamp": "2026-05-30T14:35:00.000Z"
+  },
+  "reviews": [
+    {
+      "iteration": 0,
+      "timestamp": "2026-05-30T14:45:00.000Z",
+      "compositeScore": 6.5,
+      "findingsFile": "review-findings-Acme_Support_Agent-2026-05-30.json",
+      "highFindings": 1,
+      "mediumFindings": 2,
+      "findings": [
+        { "id": "D2-H1", "severity": "HIGH", "title": "InventedDiscount", "dimension": 2 },
+        { "id": "D2-M1", "severity": "MEDIUM", "title": "WeakJailbreakGuard", "dimension": 2 },
+        { "id": "D3-M1", "severity": "MEDIUM", "title": "NoFetchRetry", "dimension": 3 },
+        { "id": "D1-L1", "severity": "LOW", "title": "NoRefundsTopic", "dimension": 1 }
+      ]
+    },
+    {
+      "iteration": 1,
+      "timestamp": "2026-05-30T15:00:00.000Z",
+      "compositeScore": 9.0,
+      "findingsFile": "review-findings-Acme_Support_Agent-2026-05-30-v2.json",
+      "highFindings": 0,
+      "mediumFindings": 0,
+      "reconciliation": {
+        "resolved": ["D2-H1", "D2-M1", "D3-M1"],
+        "persisting": ["D1-L1"],
+        "new": []
+      }
+    }
+  ],
+  "batches": [
+    {
+      "batch": 1,
+      "status": "succeeded",
+      "attempts": 1,
+      "findingIds": ["D2-H1", "D2-M1", "D3-M1"],
+      "addedPaths": [],
+      "modifiedPaths": ["force-app/main/default/genAiPlanners/Acme_Support_Agent.agent"]
+    }
+  ],
+  "iterations": [
+    {
+      "iteration": 1,
+      "phase": "COMPLETE",
+      "fixes": [
+        { "findingIds": ["D2-H1"], "summary": "Block invented discounts — only offer promotions passed in by the action" },
+        { "findingIds": ["D2-M1"], "summary": "Strengthen anti-jailbreak guardrail so the agent stays in role" },
+        { "findingIds": ["D3-M1"], "summary": "Add a retry on Knowledge fetch failure before showing the fallback" }
+      ],
+      "testResults": {
+        "passRate": 0.89,
+        "passed": 8,
+        "total": 9
+      },
+      "regressions": [],
+      "commitSha": "a1b2c3d"
+    }
+  ],
+  "remaining": [
+    {
+      "id": "D1-L1",
+      "severity": "LOW",
+      "finding": "NoRefundsTopic",
+      "detail": "Refund-status questions fall to the generic fallback. Deferred to a follow-up iteration per the fix-HIGH/MEDIUM-first rule."
+    }
+  ],
+  "outputs": [
+    { "type": "config-review-report", "path": "force-app/.../review-Acme_Support_Agent-2026-05-30.docx", "phase": "REVIEW", "iteration": 0, "createdAt": "2026-05-30T14:45:00.000Z" },
+    { "type": "findings-json", "path": "force-app/.../review-findings-Acme_Support_Agent-2026-05-30.json", "phase": "REVIEW", "iteration": 0, "createdAt": "2026-05-30T14:45:00.000Z" },
+    { "type": "test-report", "path": ".claude/skills/acme-support-testing/report-baseline.html", "phase": "TEST", "iteration": 0, "createdAt": "2026-05-30T14:35:00.000Z" },
+    { "type": "test-report", "path": ".claude/skills/acme-support-testing/report-iter1.html", "phase": "TEST", "iteration": 1, "createdAt": "2026-05-30T14:55:00.000Z" },
+    { "type": "config-review-report", "path": "force-app/.../review-Acme_Support_Agent-2026-05-30-v2.docx", "phase": "RE_REVIEW", "iteration": 1, "createdAt": "2026-05-30T15:00:00.000Z" },
+    { "type": "run-summary", "path": ".agent-improvement/run-summary-Acme_Support_Agent__00Dxx0000000000EAA-2026-05-30.md", "phase": "COMPLETE", "iteration": 1, "createdAt": "2026-05-30T15:05:00.000Z" }
+  ],
+  "errors": []
+}

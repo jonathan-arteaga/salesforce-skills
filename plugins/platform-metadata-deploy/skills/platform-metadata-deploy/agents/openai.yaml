@@ -1,0 +1,4 @@
+interface:
+  display_name: "Platform Metadata Deploy"
+  short_description: "Validate and deploy metadata."
+  default_prompt: "Use $platform-metadata-deploy to validate and deploy metadata."

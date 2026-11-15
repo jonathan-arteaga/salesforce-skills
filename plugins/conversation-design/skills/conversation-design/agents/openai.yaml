@@ -1,0 +1,4 @@
+interface:
+  display_name: "Conversation Design"
+  short_description: "Draft happy paths, errors, and handoff conversations."
+  default_prompt: "Use $conversation-design to draft happy paths, errors, and handoff conversations."

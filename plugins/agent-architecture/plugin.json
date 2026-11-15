@@ -1,0 +1,5 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "agent-architecture",
+  "description": "Plan Agentforce architecture and design-only proposals with subagents, actions, and routing. Use agentforce-generate when asked to create, build, or modify an agent implementation; use agentforce-architecture-analyze to inventory deployed metadata."
+}

@@ -1,0 +1,5 @@
+{
+	"$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+	"name": "platform-apex-test-generate",
+	"description": "Author Apex test classes with fixtures, bulk cases, and assertions. Validate the tests you create. Use platform-apex-test-run for existing-suite execution and diagnosis."
+}

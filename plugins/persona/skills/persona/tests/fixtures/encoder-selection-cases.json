@@ -1,0 +1,59 @@
+[
+  {
+    "id": "greenfield-unknown",
+    "mode": "greenfield",
+    "source": null,
+    "channel": "web-chat",
+    "expected_base": "references/persona-handoff-guide-agentscript.md",
+    "expected_template": "templates/persona-handoff-template.md",
+    "voice_handoff": false
+  },
+  {
+    "id": "brownfield-agent-script",
+    "mode": "brownfield",
+    "source": "sample.agent",
+    "channel": "web-chat",
+    "expected_base": "references/persona-handoff-guide-agentscript.md",
+    "expected_template": "templates/persona-handoff-template.md",
+    "voice_handoff": false
+  },
+  {
+    "id": "brownfield-builder",
+    "mode": "brownfield",
+    "source": "builder-fields.md",
+    "channel": "web-chat",
+    "expected_base": "references/persona-encoding-guide-builder-legacy.md",
+    "expected_template": "templates/persona-encoding-template-builder-legacy.md",
+    "voice_handoff": false
+  },
+  {
+    "id": "greenfield-explicit-builder",
+    "mode": "greenfield",
+    "source": null,
+    "explicit_base": "legacy-builder",
+    "channel": "web-chat",
+    "expected_base": "references/persona-handoff-guide-agentscript.md",
+    "expected_template": "templates/persona-handoff-template.md",
+    "voice_handoff": false,
+    "legacy_builder_redirected": true
+  },
+  {
+    "id": "brownfield-builder-migrate-to-agent-script",
+    "mode": "brownfield",
+    "source": "builder-fields.md",
+    "explicit_base": "agent-script",
+    "channel": "web-chat",
+    "expected_base": "references/persona-handoff-guide-agentscript.md",
+    "expected_template": "templates/persona-handoff-template.md",
+    "voice_handoff": false
+  },
+  {
+    "id": "voice-agent-script",
+    "mode": "brownfield",
+    "source": "sample.agent",
+    "channel": "telephony",
+    "expected_base": "references/persona-handoff-guide-agentscript.md",
+    "expected_template": "templates/persona-handoff-template.md",
+    "voice_handoff": true
+  }
+]

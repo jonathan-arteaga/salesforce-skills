@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "salesforce-access-design",
+  "version": "1.0.0",
+  "description": "Design or troubleshoot Salesforce CRM access using permission sets, permission set groups, object and field permissions, and record sharing. Use for access matrices, least-privilege plans and allowed/denied user tests. Not Data 360 policy configuration or a full adversarial security audit."
+}

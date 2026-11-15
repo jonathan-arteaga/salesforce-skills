@@ -1,0 +1,5 @@
+{
+	"$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+	"name": "agentforce-technical-design-doc",
+	"description": "Turn Agentforce implementation evidence into a customer-facing HTML technical design with diagrams. Use agentforce-architecture-analyze for a metadata inventory."
+}

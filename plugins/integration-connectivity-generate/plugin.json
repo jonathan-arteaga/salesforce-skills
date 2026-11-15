@@ -1,0 +1,5 @@
+{
+	"$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+	"name": "integration-connectivity-generate",
+	"description": "Design Salesforce outbound integrations using credentials, callouts, services, or events. Return scoped configuration and code. Use integration-connectivity-connected-app-configure for OAuth app metadata."
+}

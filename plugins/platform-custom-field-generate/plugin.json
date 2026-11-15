@@ -1,0 +1,5 @@
+{
+	"$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+	"name": "platform-custom-field-generate",
+	"description": "Create or validate Salesforce custom field metadata. Return fields and type-specific validation. Use platform-custom-object-generate for object-level metadata."
+}

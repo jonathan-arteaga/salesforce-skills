@@ -1,5 +1,0 @@
-{
-	"$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-	"name": "agentforce-config-review",
-	"description": "Review Agentforce configuration and scoped permission evidence. Return a scored assessment and prioritized improvements. Use agentforce-generate to edit Agent Script."
-}

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Data 360 Activation & Governance"
+  short_description: "Govern Data 360 spaces, SQL insights, and activations."
+  default_prompt: "Use $data360-activation-governance to configure Data 360 policies, write SQL or calculated insights, or build consent-gated activations."
+
+policy:
+  allow_implicit_invocation: true

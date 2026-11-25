@@ -9,7 +9,7 @@ import unittest
 from unittest.mock import patch, MagicMock
 from urllib.error import HTTPError
 
-SCRIPTS = Path(__file__).resolve().parents[1]/'plugins/data360-schema-get/skills/data360-schema-get/scripts'
+SCRIPTS = Path(__file__).resolve().parents[1]/'plugins/data360-data-pipeline/skills/data360-data-pipeline/scripts'
 spec = importlib.util.spec_from_file_location('schema_client', SCRIPTS/'schema_client.py')
 c = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(c)

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Salesforce Apex"
+  short_description: "Author, test, run, and debug Salesforce Apex code."
+  default_prompt: "Use $salesforce-apex to author, test, run, or debug Salesforce Apex classes, triggers, and logs."
+policy:
+  allow_implicit_invocation: true

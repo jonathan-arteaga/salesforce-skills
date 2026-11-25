@@ -1,4 +1,0 @@
-interface:
-  display_name: "Agentforce Architecture Analyze"
-  short_description: "Map an agent\u2019s declared architecture from metadata."
-  default_prompt: "Use $agentforce-architecture-analyze to map an agent\u2019s declared architecture from metadata."

@@ -1,5 +1,6 @@
 {
-	"$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-	"name": "agentforce-test",
-	"description": "Author, run, or analyze structured Agentforce test suites in an authorized environment. Return test specifications or results. Use agentforce-generate for authoring changes."
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "agentforce-test",
+  "version": "2.0.0",
+  "description": "Author, run, and evaluate Agentforce test suites, preview smoke checks, OWASP security probes, and routing-derived escalation scenarios. Use agentforce-build for script edits, agentforce-review for static audits, or agentforce-observe for production trace analysis."
 }

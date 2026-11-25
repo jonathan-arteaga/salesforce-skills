@@ -1,0 +1,6 @@
+interface:
+  display_name: "Agentforce Review"
+  short_description: "Audit Agentforce metadata, config, access, and compliance."
+  default_prompt: "Use $agentforce-review to inspect deployed Agentforce metadata, audit configuration and permissions, review regulated safeguards, or plan an improvement loop."
+policy:
+  allow_implicit_invocation: true

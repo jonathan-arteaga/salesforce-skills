@@ -1,4 +1,0 @@
-interface:
-  display_name: "Platform Data Manage"
-  short_description: "Import, export, seed, and maintain platform records."
-  default_prompt: "Use $platform-data-manage to import, export, seed, and maintain platform records."

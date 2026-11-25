@@ -1,4 +1,0 @@
-interface:
-  display_name: "Voice UX"
-  short_description: "Adapt an existing agent for spoken interaction."
-  default_prompt: "Use $voice-ux to adapt an existing agent for spoken interaction."

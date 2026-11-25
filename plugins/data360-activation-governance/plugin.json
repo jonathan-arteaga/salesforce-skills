@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "data360-activation-governance",
+  "version": "2.0.0",
+  "description": "Govern Data 360 data spaces and policies, write Data 360 SQL or calculated insights, and build consent-aware segments and activations. Use data360-data-pipeline for schemas, ingestion, or IR, salesforce-security-access for core CRM RBAC, or salesforce-schema-data for SOQL."
+}

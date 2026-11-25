@@ -1,70 +1,108 @@
 {
-  "salesforce-access-design": [
-    "data360-governance",
-    "agentforce-test",
-    "platform-metadata-deploy"
+  "salesforce-discovery": [
+    "agentforce-design",
+    "agentforce-build",
+    "agentforce-review",
+    "salesforce-security-access",
+    "data360-activation-governance",
+    "salesforce-flow",
+    "salesforce-apex",
+    "salesforce-devops-deploy",
+    "agentforce-observe",
+    "salesforce-tutorial-builder"
   ],
-  "data360-ingestion-modeling": [
-    "data360-schema-get",
-    "data360-governance",
-    "data360-query-insights"
+  "salesforce-tutorial-builder": [
+    "salesforce-discovery",
+    "salesforce-lwc",
+    "agentforce-design"
   ],
-  "data360-query-insights": [
-    "platform-soql-query",
-    "crm-analytics-wave-generate",
-    "data360-schema-get",
-    "data360-governance"
-  ],
-  "data360-governance": [
-    "salesforce-access-design",
-    "data360-ingestion-modeling",
-    "agentforce-grounding"
-  ],
-  "agentforce-grounding": [
-    "agentforce-generate",
-    "agentforce-test",
-    "data360-governance",
-    "salesforce-access-design"
-  ],
-  "regulated-industry-agents-review": [
-    "agentforce-config-review",
-    "agentforce-test"
-  ],
-  "data360-schema-get": [
-    "data360-ingestion-modeling"
-  ],
-  "data360-identity-resolution": [
-    "data360-ingestion-modeling",
-    "data360-governance",
-    "data360-query-insights"
-  ],
-  "data360-segmentation-activation": [
-    "data360-governance",
-    "data360-query-insights",
-    "data360-identity-resolution"
-  ],
-  "prompt-template-build": [
-    "agentforce-generate",
-    "agentforce-grounding",
-    "agentforce-test"
-  ],
-  "agentforce-api-integrate": [
-    "integration-connectivity-connected-app-configure",
-    "integration-connectivity-generate",
-    "agentforce-test"
-  ],
-  "salesforce-industry-playbook": [
-    "agentforce-architecture-analyze",
-    "salesforce-access-design",
-    "data360-governance",
-    "agent-architecture",
-    "persona",
-    "conversation-design",
-    "agentforce-generate",
-    "automation-flow-generate",
-    "platform-apex-generate",
-    "agentforce-test",
-    "platform-metadata-deploy",
+  "data360-data-pipeline": [
+    "data360-activation-governance",
+    "salesforce-schema-data",
     "agentforce-observe"
+  ],
+  "data360-activation-governance": [
+    "data360-data-pipeline",
+    "salesforce-security-access",
+    "salesforce-analytics",
+    "agentforce-build"
+  ],
+  "salesforce-schema-data": [
+    "salesforce-apex",
+    "data360-data-pipeline",
+    "salesforce-devops-deploy"
+  ],
+  "salesforce-analytics": [
+    "data360-activation-governance",
+    "salesforce-schema-data"
+  ],
+  "salesforce-apex": [
+    "salesforce-flow",
+    "salesforce-lwc",
+    "salesforce-schema-data",
+    "salesforce-security-access",
+    "salesforce-devops-deploy"
+  ],
+  "salesforce-flow": [
+    "salesforce-apex",
+    "agentforce-build",
+    "agentforce-test",
+    "salesforce-devops-deploy"
+  ],
+  "salesforce-lwc": [
+    "salesforce-apex",
+    "salesforce-tutorial-builder",
+    "salesforce-security-access"
+  ],
+  "salesforce-integrations": [
+    "salesforce-apex",
+    "salesforce-security-access",
+    "agentforce-build",
+    "agentforce-test"
+  ],
+  "agentforce-design": [
+    "salesforce-discovery",
+    "agentforce-build",
+    "agentforce-review",
+    "agentforce-test"
+  ],
+  "agentforce-build": [
+    "agentforce-design",
+    "agentforce-review",
+    "agentforce-test",
+    "data360-activation-governance",
+    "salesforce-integrations"
+  ],
+  "agentforce-review": [
+    "agentforce-design",
+    "agentforce-build",
+    "agentforce-test",
+    "agentforce-observe",
+    "salesforce-security-access"
+  ],
+  "agentforce-test": [
+    "agentforce-build",
+    "agentforce-review",
+    "agentforce-observe",
+    "salesforce-flow"
+  ],
+  "salesforce-security-access": [
+    "data360-activation-governance",
+    "agentforce-review",
+    "agentforce-test",
+    "salesforce-devops-deploy"
+  ],
+  "salesforce-devops-deploy": [
+    "salesforce-apex",
+    "salesforce-flow",
+    "salesforce-schema-data",
+    "agentforce-build",
+    "salesforce-security-access"
+  ],
+  "agentforce-observe": [
+    "agentforce-review",
+    "agentforce-test",
+    "data360-data-pipeline",
+    "data360-activation-governance"
   ]
 }

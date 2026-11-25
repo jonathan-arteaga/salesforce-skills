@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "salesforce-analytics",
+  "version": "2.0.0",
+  "description": "Build and govern Tableau Next semantic models, visualizations, and dashboards via MCP, or author CRM Analytics Wave recipes, datasets, SAQL, and dashboards. Use data360-data-pipeline for DLO/DMO modeling, data360-activation-governance for Data 360 SQL, or salesforce-lwc for custom UI."
+}

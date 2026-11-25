@@ -1,5 +1,0 @@
-{
-	"$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-	"name": "agentforce-workshop-facilitator",
-	"description": "Prepare and document discovery for an Agentforce workshop. Return tailored questions, use cases, and a customer workshop document. Use agentforce-technical-design-doc for implementation documentation."
-}

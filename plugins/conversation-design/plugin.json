@@ -1,5 +1,0 @@
-{
-	"$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-	"name": "conversation-design",
-	"description": "Draft example dialogues from an Agentforce conversation brief. Return happy-path, error, and fallback scenarios. Use persona for identity and voice-ux for spoken interaction."
-}

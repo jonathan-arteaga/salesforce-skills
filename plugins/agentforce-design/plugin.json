@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "agentforce-design",
+  "version": "2.0.0",
+  "description": "Design Agentforce architecture, subagent authority, persona contracts, starter dialogues, Voice UX, and HTML technical design docs. Use salesforce-discovery for workshops, agentforce-build for Agent Script, agentforce-review for org audits, or agentforce-test for suites."
+}

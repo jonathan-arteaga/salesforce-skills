@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 330" width="1200" height="330" role="img" aria-label="Salesforce Skills — 17 domain-owning skills across 5 Salesforce and Agentforce lifecycle stages">
+  <defs>
+    <linearGradient id="bg-dark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="55%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0a192f"/>
+    </linearGradient>
+    <linearGradient id="accent-bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00a1e0"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <radialGradient id="glow-left" cx="18%" cy="18%" r="48%">
+      <stop offset="0%" stop-color="#00a1e0" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#00a1e0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-right" cx="86%" cy="22%" r="45%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="330" rx="18" fill="url(#bg-dark)"/>
+  <rect width="1200" height="330" rx="18" fill="url(#glow-left)"/>
+  <rect width="1200" height="330" rx="18" fill="url(#glow-right)"/>
+  <rect x="0.75" y="0.75" width="1198.5" height="328.5" rx="17.25" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+  <rect x="36" y="0" width="1128" height="3.5" rx="2" fill="url(#accent-bar)"/>
+
+  <!-- Top eyebrow pill -->
+  <rect x="44" y="28" width="430" height="28" rx="14" fill="#0f253e" stroke="#1d4ed8" stroke-opacity="0.55" stroke-width="1"/>
+  <circle cx="62" cy="42" r="4.5" fill="#38bdf8"/>
+  <text x="76" y="46.5" fill="#7dd3fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" letter-spacing="1.1">GEMINI 4 · ANTIGRAVITY · CODEX · RELEASE 264+</text>
+
+  <!-- Stat pills top right -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+    <rect x="818" y="28" width="106" height="28" rx="14" fill="#132238" stroke="#334155" stroke-width="1"/>
+    <text x="871" y="46.5" text-anchor="middle" fill="#e2e8f0" font-size="12" font-weight="700">17 Skills</text>
+    <rect x="934" y="28" width="100" height="28" rx="14" fill="#132238" stroke="#334155" stroke-width="1"/>
+    <text x="984" y="46.5" text-anchor="middle" fill="#38bdf8" font-size="12" font-weight="700">5 Stages</text>
+    <rect x="1044" y="28" width="112" height="28" rx="14" fill="#132238" stroke="#334155" stroke-width="1"/>
+    <text x="1100" y="46.5" text-anchor="middle" fill="#a5b4fc" font-size="12" font-weight="700">~1.2K Tokens</text>
+  </g>
+
+  <!-- Main Title & Subtitle -->
+  <text x="44" y="106" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="800" letter-spacing="-0.8">Salesforce Skills</text>
+  <text x="44" y="138" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16.5" font-weight="400">Domain-owning AI skills for Salesforce Platform, Data 360 &amp; Agentforce — progressive disclosure, zero bloat, hard org safety gates.</text>
+
+  <!-- 5 Lifecycle Stage Cards -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+    <!-- Stage 1 -->
+    <rect x="44" y="172" width="212" height="126" rx="12" fill="#111c30" stroke="#1e3a5f" stroke-width="1.2"/>
+    <rect x="44" y="172" width="212" height="4" rx="2" fill="#38bdf8"/>
+    <text x="60" y="198" fill="#38bdf8" font-size="11" font-weight="700" letter-spacing="0.8">STAGE 01 · 2 SKILLS</text>
+    <text x="60" y="222" fill="#f1f5f9" font-size="15" font-weight="700">Discover &amp; Enable</text>
+    <text x="60" y="246" fill="#94a3b8" font-size="12">Brownfield discovery,</text>
+    <text x="60" y="263" fill="#94a3b8" font-size="12">workshops, solution framing</text>
+    <text x="60" y="280" fill="#94a3b8" font-size="12">&amp; interactive HTML tutorials</text>
+
+    <!-- Stage 2 -->
+    <rect x="269" y="172" width="212" height="126" rx="12" fill="#111c30" stroke="#1e3a5f" stroke-width="1.2"/>
+    <rect x="269" y="172" width="212" height="4" rx="2" fill="#2dd4bf"/>
+    <text x="285" y="198" fill="#2dd4bf" font-size="11" font-weight="700" letter-spacing="0.8">STAGE 02 · 4 SKILLS</text>
+    <text x="285" y="222" fill="#f1f5f9" font-size="15" font-weight="700">Data 360 &amp; Analytics</text>
+    <text x="285" y="246" fill="#94a3b8" font-size="12">DLO/DMO pipelines, identity,</text>
+    <text x="285" y="263" fill="#94a3b8" font-size="12">governance, core schema/SOQL</text>
+    <text x="285" y="280" fill="#94a3b8" font-size="12">&amp; Tableau Next / CRMA</text>
+
+    <!-- Stage 3 -->
+    <rect x="494" y="172" width="212" height="126" rx="12" fill="#111c30" stroke="#1e3a5f" stroke-width="1.2"/>
+    <rect x="494" y="172" width="212" height="4" rx="2" fill="#60a5fa"/>
+    <text x="510" y="198" fill="#60a5fa" font-size="11" font-weight="700" letter-spacing="0.8">STAGE 03 · 4 SKILLS</text>
+    <text x="510" y="222" fill="#f1f5f9" font-size="15" font-weight="700">Platform &amp; Integrations</text>
+    <text x="510" y="246" fill="#94a3b8" font-size="12">Apex &amp; Cursors, Flows,</text>
+    <text x="510" y="263" fill="#94a3b8" font-size="12">LWC/SLDS, ECA OAuth,</text>
+    <text x="510" y="280" fill="#94a3b8" font-size="12">Pub/Sub, Agent API &amp; MCP</text>
+
+    <!-- Stage 4 -->
+    <rect x="719" y="172" width="212" height="126" rx="12" fill="#111c30" stroke="#312e81" stroke-width="1.2"/>
+    <rect x="719" y="172" width="212" height="4" rx="2" fill="#a78bfa"/>
+    <text x="735" y="198" fill="#a78bfa" font-size="11" font-weight="700" letter-spacing="0.8">STAGE 04 · 4 SKILLS</text>
+    <text x="735" y="222" fill="#f1f5f9" font-size="15" font-weight="700">Agentforce Lifecycle</text>
+    <text x="735" y="246" fill="#94a3b8" font-size="12">Atlas/Persona/Voice design,</text>
+    <text x="735" y="263" fill="#94a3b8" font-size="12">Agent Script &amp; Grounding,</text>
+    <text x="735" y="280" fill="#94a3b8" font-size="12">read-only review &amp; testing</text>
+
+    <!-- Stage 5 -->
+    <rect x="944" y="172" width="212" height="126" rx="12" fill="#111c30" stroke="#1e3a5f" stroke-width="1.2"/>
+    <rect x="944" y="172" width="212" height="4" rx="2" fill="#f59e0b"/>
+    <text x="960" y="198" fill="#fbbf24" font-size="11" font-weight="700" letter-spacing="0.8">STAGE 05 · 3 SKILLS</text>
+    <text x="960" y="222" fill="#f1f5f9" font-size="15" font-weight="700">Security, DevOps &amp; Ops</text>
+    <text x="960" y="246" fill="#94a3b8" font-size="12">Least-privilege access,</text>
+    <text x="960" y="263" fill="#94a3b8" font-size="12">SF CLI deploy/2GP CI &amp;</text>
+    <text x="960" y="280" fill="#94a3b8" font-size="12">Data 360 session observability</text>
+  </g>
+</svg>

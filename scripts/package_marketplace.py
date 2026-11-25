@@ -1,205 +1,238 @@
-"""Generate or check the committed packages derived from individual skills."""
+#!/usr/bin/env python3
+"""Sync or check Codex + Google Antigravity manifests, links, and zero orphaned references."""
 
 import argparse
-from hashlib import sha256
+from collections import deque
 import json
 from pathlib import Path
 import re
-import shutil
 import sys
+from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
-PLUGINS = ROOT / "plugins"
-SCHEMA = "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json"
-BUNDLES = {
-    "product-planning": (
-        "Product Planning",
-        "Explore a product decision, frame an experiment, or define a committed build.",
-        ("think-with-me", "frame-concept-build", "frame-product-build"),
-    ),
-    "design-systems": (
-        "Design Systems",
-        "Build, document, or consolidate a design system.",
-        ("build-design-system", "design-md", "design-system-consolidator"),
-    ),
+ANTIGRAVITY_SCHEMA = "https://antigravity.dev/schemas/plugin/v1.json"
+DEFAULT_CATEGORY_MAP = {
+    "salesforce-discovery": "Discover & Enable",
+    "salesforce-tutorial-builder": "Discover & Enable",
+    "data360-data-pipeline": "Data 360, Core Data & Analytics",
+    "data360-activation-governance": "Data 360, Core Data & Analytics",
+    "salesforce-schema-data": "Data 360, Core Data & Analytics",
+    "salesforce-analytics": "Data 360, Core Data & Analytics",
+    "salesforce-apex": "Core Platform & Integrations",
+    "salesforce-flow": "Core Platform & Integrations",
+    "salesforce-lwc": "Core Platform & Integrations",
+    "salesforce-integrations": "Core Platform & Integrations",
+    "agentforce-design": "Agentforce Design, Build & QA",
+    "agentforce-build": "Agentforce Design, Build & QA",
+    "agentforce-review": "Agentforce Design, Build & QA",
+    "agentforce-test": "Agentforce Design, Build & QA",
+    "salesforce-security-access": "Security, DevOps & Production Ops",
+    "salesforce-devops-deploy": "Security, DevOps & Production Ops",
+    "agentforce-observe": "Security, DevOps & Production Ops",
 }
-OPTIONAL_CATEGORIES = {"Agentforce", "Salesforce Platform and Analytics"}
+SUGGESTED_PROMPTS = [
+    "Run brownfield discovery for our Salesforce Service Cloud org before proposing an Agentforce build.",
+    "Design a Data 360 DLO-to-DMO pipeline and identity resolution ruleset for customer profiles.",
+    "Implement and unit-test a bulkified Apex service using explicit WITH USER_MODE and Apex Cursors.",
+    "Audit our Agentforce agent configuration for regulated-industry controls without mutating the org.",
+    "Trace a failing Agentforce session in Data 360 and identify latency or tool-call bottlenecks.",
+    "Validate our deployment package against a sandbox with RunSpecifiedTests before release.",
+]
+
+LINK_RE = re.compile(r"(?<!!)\[[^\]\n]+\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)")
+IGNORED_PARTS = {".DS_Store", "__pycache__", ".pytest_cache"}
 
 
-SHARED_REFERENCES = (
-    ("persona", "industry-patterns.md", "salesforce-industry-playbook"),
-    ("persona", "industry-patterns.md", "agent-architecture"),
-    ("persona", "industry-patterns.md", "conversation-design"),
-    ("persona", "industry-patterns.md", "agentforce-generate"),
-    ("persona", "industry-patterns.md", "agentforce-test"),
-    ("persona", "industry-patterns.md", "agentforce-workshop-facilitator"),
-    ("persona", "industry-patterns.md", "voice-ux"),
+def discover_packages(root: Path) -> list[dict]:
+    """Return sorted package descriptors from plugins/*/plugin.json."""
+    plugins_dir = root / "plugins"
+    packages = []
+    for manifest_path in sorted(plugins_dir.glob("*/plugin.json")):
+        plugin_dir = manifest_path.parent
+        name = plugin_dir.name
+        data = json.loads(manifest_path.read_text(encoding="utf-8"))
+        if data.get("name") != name:
+            raise ValueError(f"plugin.json name mismatch in {manifest_path.relative_to(root)}")
+        discovered = {p.parent.name for p in plugin_dir.glob("skills/*/SKILL.md")}
+        if discovered != {name}:
+            raise ValueError(f"Expected single skill entrypoint {name!r} in {plugin_dir.relative_to(root)}")
+        category = data.get("category") or DEFAULT_CATEGORY_MAP.get(name, "Salesforce Platform")
+        packages.append({
+            "name": name,
+            "category": category,
+            "description": data.get("description", ""),
+            "plugin_rel": f"./plugins/{name}",
+            "skill_rel": f"./plugins/{name}/skills/{name}",
+        })
+    if not packages:
+        raise ValueError(f"No packaged plugins found under {plugins_dir}")
+    return packages
 
-    ("agentforce-generate", "voice-latency-heuristics.md", "agentforce-observe"),
-    ("agentforce-generate", "voice-latency-heuristics.md", "agentforce-test"),
-    ("integration-connectivity-generate", "platform-events-guide.md", "experience-lwc-generate"),
-)
 
-
-def skill_path(name):
-    return PLUGINS / name / "skills" / name
-
-
-def package_files(root):
-    if not root.exists():
-        return {}
+def build_codex_marketplace(packages: list[dict]) -> dict:
+    """Build .agents/plugins/marketplace.json payload."""
     return {
-        path.relative_to(root): path.read_bytes()
-        for path in sorted(root.rglob("*"))
-        if path.is_file() and not any(part in {".DS_Store", "__pycache__", ".pytest_cache"} for part in path.parts)
+        "name": "salesforce-skills",
+        "interface": {
+            "displayName": "Salesforce Skills",
+        },
+        "plugins": [
+            {
+                "name": pkg["name"],
+                "source": {
+                    "source": "local",
+                    "path": pkg["plugin_rel"],
+                },
+                "policy": {
+                    "installation": "AVAILABLE",
+                    "authentication": "ON_INSTALL",
+                },
+                "category": pkg["category"],
+            }
+            for pkg in packages
+        ],
     }
 
 
-def generated_packages():
-    guidance = ROOT / "docs/salesforce"
-    mapping = json.loads((guidance / "manifest.json").read_text())["skills"] if (guidance / "manifest.json").exists() else {}
-    common = (guidance / "common.md").read_text() if mapping else ""
-    for name, domains in mapping.items():
-        body = common + "\n" + "\n".join((guidance / (domain + ".md")).read_text() for domain in domains)
-        yield skill_path(name) / "references/current-salesforce", {Path("guide.md"): body.encode()}
-
-    for name, (title, desc, members) in BUNDLES.items():
-        if not (PLUGINS / name).exists():
-            continue
-        manifest = {
-            "$schema": SCHEMA,
-            "name": name,
-            "version": "1.0.0",
-            "description": desc,
-            "extensions": {"com.openai": {"interface": {"displayName": title, "shortDescription": desc}}},
-        }
-        files = {Path("plugin.json"): (json.dumps(manifest, indent=2) + "\n").encode()}
-        for member in members:
-            source = package_files(skill_path(member))
-            if Path("SKILL.md") not in source:
-                raise ValueError(f"Missing {member} entrypoint")
-            files.update({Path("skills") / member / path: data for path, data in source.items()})
-        yield PLUGINS / name, files
-
-    if skill_path("write-as-me").exists():
-        source = skill_path("write-in-authentic-voice")
-        workflow = (source / "SKILL.md").read_bytes().split(b"---", 2)[2].lstrip()
-        writing = {Path("workflow.md"): workflow, Path("LICENSE"): (source / "LICENSE").read_bytes()}
-        writing.update({Path("references") / path: data for path, data in package_files(source / "references").items()})
-        yield skill_path("write-as-me") / "references/shared-writing", writing
-
-    shared = {}
-    for owner, name, consumer in SHARED_REFERENCES:
-        if not skill_path(consumer).exists():
-            continue
-        source = skill_path(owner)
-        files = shared.setdefault(consumer, {})
-        files[Path(name)] = (source / "references" / name).read_bytes()
-        for license_file in source.glob("LICENSE*"):
-            files[Path(f"{owner}-{license_file.name}")] = license_file.read_bytes().rstrip(b"\r\n") + b"\n"
-    for consumer, files in shared.items():
-        yield skill_path(consumer) / "references/shared", files
+def build_antigravity_manifest(packages: list[dict]) -> dict:
+    """Build .antigravity-plugin/plugin.json payload."""
+    return {
+        "$schema": ANTIGRAVITY_SCHEMA,
+        "name": "salesforce-skills",
+        "displayName": "Salesforce Skills",
+        "version": "2.0.0",
+        "description": (
+            f"Domain-owning Salesforce, Data 360, and Agentforce skill library ({len(packages)} skills) "
+            "engineered for Gemini 4 / Google Antigravity progressive disclosure and strict org safety gates."
+        ),
+        "author": {
+            "name": "Jonathan Arteaga",
+            "url": "https://github.com/jonathan-arteaga",
+        },
+        "license": "Apache-2.0",
+        "repository": "https://github.com/jonathan-arteaga/salesforce-skills",
+        "keywords": [
+            "salesforce",
+            "agentforce",
+            "data-360",
+            "apex",
+            "lwc",
+            "flow",
+            "sf-cli",
+            "antigravity",
+        ],
+        "skills": [pkg["skill_rel"] for pkg in packages],
+        "suggestedPrompts": SUGGESTED_PROMPTS,
+    }
 
 
-def check_catalog():
-    manifest = json.loads((ROOT / ".agents/plugins/marketplace.json").read_text())
-    entries = manifest["plugins"]
-    names = {entry["name"] for entry in entries}
-    packages = {path.parent.name for path in PLUGINS.glob("*/plugin.json")}
-    if manifest["name"] not in {"skills", "salesforce-skills"} or not entries or len(entries) != len(names) or names != packages:
-        raise ValueError("Expected distinct marketplace entries matching the package folders")
-    bundled_members = {member for _, _, members in BUNDLES.values() for member in members}
-    for entry in entries:
-        name = entry["name"]
-        root = PLUGINS / name
-        package = json.loads((root / "plugin.json").read_text())
-        if package["name"] != name or entry["source"] != {"source": "local", "path": f"./plugins/{name}"}:
-            raise ValueError(f"Invalid package name or path for {name}")
-        category = entry["category"]
-        if not category:
-            raise ValueError(f"Missing catalog category for {name}")
-        optional = category in OPTIONAL_CATEGORIES or name in bundled_members
-        policy = "AVAILABLE" if optional else "INSTALLED_BY_DEFAULT"
-        if entry["policy"]["installation"] != policy:
-            raise ValueError(f"Expected {policy} for {name}")
-        expected = set(BUNDLES[name][2]) if name in BUNDLES else {name}
-        discovered = {path.parent.name for path in root.glob("skills/*/SKILL.md")}
-        if discovered != expected:
-            raise ValueError(f"Unexpected skill entrypoints in {name}")
-
-    if skill_path("write-as-me").exists():
-        writing = skill_path("write-as-me") / "references"
-        release = json.loads((writing / "voice-release.json").read_text())
-        if sha256((writing / "voice-profile.md").read_bytes()).hexdigest() != release["profile_sha256"]:
-            raise ValueError("The private writing profile checksum differs from its release metadata")
+def sync_or_check_json(path: Path, payload: dict, check: bool, root: Path, stale: list[str]) -> None:
+    expected = json.dumps(payload, indent=2) + "\n"
+    current = path.read_text(encoding="utf-8") if path.exists() else None
+    if current == expected:
+        return
+    if check:
+        stale.append(str(path.relative_to(root)))
+    else:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(expected, encoding="utf-8")
 
 
-def check_references():
-    from urllib.parse import unquote, urlsplit
+def check_links_and_orphans(root: Path) -> None:
+    """Verify every relative Markdown link resolves inside its plugin and zero references/ files are orphaned."""
+    plugins_dir = root / "plugins"
+    errors: list[str] = []
 
-    link = re.compile(r"(?<!!)\[[^\]\n]+\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)")
-    example_targets = {"[docs-url]", "[homepage-url]", "CONTRIBUTING.md", "LICENSE", "url"}
-    errors = []
-    for f in sorted(PLUGINS.glob("*/skills/*/**/*.md")):
-        package = PLUGINS / f.relative_to(PLUGINS).parts[0]
-        for href in link.findall(f.read_text(encoding="utf-8")):
-            target = unquote(href.strip("<>")).split("#", 1)[0]
-            if not target:
+    for skill_md in sorted(plugins_dir.glob("*/skills/*/SKILL.md")):
+        skill_dir = skill_md.parent
+        package_dir = skill_dir.parents[1]
+
+        # 1. Validate all relative links in every Markdown file inside the skill.
+        for md_file in sorted(skill_dir.rglob("*.md")):
+            if any(part in IGNORED_PARTS for part in md_file.parts):
                 continue
-            if re.fullmatch(r"http://[\w.-]+\.md", target, re.IGNORECASE):
-                errors.append(f"{f.relative_to(ROOT)}: invalid filename URL {href}")
-                continue
-            if urlsplit(target).scheme:
-                continue
-            if f.name == "template.md" and "write-readme" in f.parts and target in example_targets:
-                continue
-            path = (f.parent / target).resolve()
-            if not path.is_relative_to(package.resolve()) or not path.exists():
-                errors.append(f"{f.relative_to(ROOT)}: missing packaged reference {href}")
+            for href in LINK_RE.findall(md_file.read_text(encoding="utf-8")):
+                target = unquote(href.strip("<>")).split("#", 1)[0]
+                if not target:
+                    continue
+                if re.fullmatch(r"http://[\w.-]+\.md", target, re.IGNORECASE):
+                    errors.append(f"{md_file.relative_to(root)}: invalid filename URL {href}")
+                    continue
+                if urlsplit(target).scheme:
+                    continue
+                resolved = (md_file.parent / target).resolve()
+                if not resolved.is_relative_to(package_dir.resolve()) or not resolved.exists():
+                    errors.append(f"{md_file.relative_to(root)}: missing packaged reference {href}")
+
+        # 2. Enforce zero orphaned files in references/ via reachability from SKILL.md.
+        refs_dir = skill_dir / "references"
+        if refs_dir.is_dir():
+            all_refs = {
+                p.resolve()
+                for p in refs_dir.rglob("*")
+                if p.is_file() and not any(part in IGNORED_PARTS for part in p.parts)
+            }
+            visited_md: set[Path] = set()
+            reachable: set[Path] = set()
+            queue: deque[Path] = deque([skill_md.resolve()])
+            while queue:
+                current = queue.popleft()
+                if current in visited_md or not current.is_file():
+                    continue
+                visited_md.add(current)
+                for href in LINK_RE.findall(current.read_text(encoding="utf-8")):
+                    target = unquote(href.strip("<>")).split("#", 1)[0]
+                    if not target or urlsplit(target).scheme:
+                        continue
+                    resolved = (current.parent / target).resolve()
+                    if resolved.is_relative_to(skill_dir.resolve()) and resolved.is_file():
+                        reachable.add(resolved)
+                        if resolved.suffix.lower() == ".md" and resolved not in visited_md:
+                            queue.append(resolved)
+            for orphan in sorted(all_refs - reachable):
+                errors.append(f"{orphan.relative_to(root)}: orphaned reference file (not linked from SKILL.md)")
+
     if errors:
         raise ValueError("\n".join(errors))
 
 
-def main():
+def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Verify without rewriting generated files")
-    args = parser.parse_args()
-    stale = []
-    if skill_path("agentforce-generate").exists():
-        grounding_workflow = skill_path("agentforce-grounding") / "references/workflow.md"
-        for name in ("agentforce-generate",):
-            copy = skill_path(name) / "references/grounding-workflow.md"
-            if not copy.exists() or copy.read_bytes() != grounding_workflow.read_bytes():
-                if args.check:
-                    stale.append(str(copy.relative_to(ROOT)))
-                else:
-                    copy.write_bytes(grounding_workflow.read_bytes())
-        grounding_source = skill_path("agentforce-grounding") / "references/data-library-reference.md"
-        grounding_copy = skill_path("agentforce-generate") / "references/data-library-reference.md"
-        grounding_bytes = grounding_source.read_bytes().replace(b"(workflow.md)", b"(grounding-workflow.md)")
-        if not grounding_copy.exists() or grounding_copy.read_bytes() != grounding_bytes:
-            if args.check:
-                stale.append(str(grounding_copy.relative_to(ROOT)))
-            else:
-                grounding_copy.write_bytes(grounding_bytes)
-    for directory, files in generated_packages():
-        if package_files(directory) == files:
-            continue
-        if args.check:
-            stale.append(str(directory.relative_to(ROOT)))
-            continue
-        if directory.exists():
-            shutil.rmtree(directory)
-        for path, data in files.items():
-            dest = directory / path
-            dest.parent.mkdir(parents=True, exist_ok=True)
-            dest.write_bytes(data)
-    if stale:
-        print("Regenerate these packages:\n" + "\n".join(stale), file=sys.stderr)
+    parser.add_argument("--root", type=Path, default=ROOT)
+    parser.add_argument("--check", action="store_true", help="Verify manifests without rewriting files.")
+    args = parser.parse_args(argv)
+    root = args.root.resolve()
+
+    try:
+        packages = discover_packages(root)
+        stale: list[str] = []
+        sync_or_check_json(
+            root / ".agents" / "plugins" / "marketplace.json",
+            build_codex_marketplace(packages),
+            args.check,
+            root,
+            stale,
+        )
+        sync_or_check_json(
+            root / ".antigravity-plugin" / "plugin.json",
+            build_antigravity_manifest(packages),
+            args.check,
+            root,
+            stale,
+        )
+        if stale:
+            print("Regenerate stale manifests:\n" + "\n".join(stale), file=sys.stderr)
+            return 1
+        check_links_and_orphans(root)
+    except (OSError, ValueError) as exc:
+        print(str(exc), file=sys.stderr)
         return 1
-    check_catalog()
-    check_references()
-    print("Checked catalog entries, applicable generated packages/checksums, and Markdown links.")
+
+    action = "Checked" if args.check else "Synced and checked"
+    print(
+        f"{action} {len(packages)} packaged skills across Codex + Antigravity manifests, "
+        "links, and zero orphaned references."
+    )
     return 0
 
 

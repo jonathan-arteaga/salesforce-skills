@@ -1,4 +1,0 @@
-interface:
-  display_name: "Agentforce Config Review"
-  short_description: "Review agent configuration and prioritize improvements."
-  default_prompt: "Use $agentforce-config-review to review agent configuration and prioritize improvements."

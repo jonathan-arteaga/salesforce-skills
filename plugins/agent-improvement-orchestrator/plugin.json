@@ -1,5 +1,0 @@
-{
-	"$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-	"name": "agent-improvement-orchestrator",
-	"description": "Coordinate an Agentforce review, improvement plan, and authorized validation. Return an advisory plan or evidence-backed result. Use agentforce-config-review for a one-off review."
-}

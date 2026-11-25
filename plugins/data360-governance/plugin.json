@@ -1,6 +1,0 @@
-{
-  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-  "name": "data360-governance",
-  "version": "1.0.0",
-  "description": "Design or review Data Cloud / Data 360 data spaces, data access policies, masking, consent requirements and governed consumption paths. Use for policy matrices and allowed/denied access evidence. Not core CRM permission-set design, activation execution, or legal compliance certification."
-}

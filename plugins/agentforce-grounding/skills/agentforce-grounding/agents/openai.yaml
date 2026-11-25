@@ -1,4 +1,0 @@
-interface:
-  display_name: "Agentforce Grounding"
-  short_description: "Build and evaluate trusted Agentforce grounding."
-  default_prompt: "Use $agentforce-grounding to build and evaluate trusted Agentforce grounding."

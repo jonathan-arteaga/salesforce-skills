@@ -1,0 +1,6 @@
+interface:
+  display_name: "Salesforce DevOps & Deploy"
+  short_description: "Manage scratch orgs, metadata deploys, 2GP, and CI/CD."
+  default_prompt: "Use $salesforce-devops-deploy to manage scratch orgs, validate or deploy metadata, build 2GP packages, or configure DevOps Center CI/CD."
+policy:
+  allow_implicit_invocation: true

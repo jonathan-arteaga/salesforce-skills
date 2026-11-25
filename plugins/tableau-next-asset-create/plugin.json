@@ -1,5 +1,0 @@
-{
-	"$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-	"name": "tableau-next-asset-create",
-	"description": "Use Tableau Next tools to profile data, query models, or build analytics assets. Return findings or validated assets within the requested scope. Use crm-analytics-wave-generate for Wave."
-}

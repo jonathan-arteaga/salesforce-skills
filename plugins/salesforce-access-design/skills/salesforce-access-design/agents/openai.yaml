@@ -1,4 +1,0 @@
-interface:
-  display_name: "Salesforce Access Design"
-  short_description: "Design and test persona-based Salesforce access."
-  default_prompt: "Use $salesforce-access-design to design and test persona-based Salesforce access."

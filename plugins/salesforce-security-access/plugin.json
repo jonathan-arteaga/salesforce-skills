@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "salesforce-security-access",
+  "version": "2.0.0",
+  "description": "Design and audit Salesforce CRM access (permission sets, groups, muting, OWD, sharing), Agentforce runtime security, and org security posture (My Trust Center, file scanning, guest boundaries). Use salesforce-apex for Apex security or data360-activation-governance for Data 360."
+}

@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "agentforce-build",
+  "version": "2.0.0",
+  "description": "Build, edit, ground, and compile Agentforce agents with Agent Script, aiAuthoringBundle metadata, Data Libraries, custom retrievers, and Prompt Builder templates. Use agentforce-design for specs, agentforce-review for read-only audits, or agentforce-test for test suites."
+}

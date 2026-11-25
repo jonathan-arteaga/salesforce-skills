@@ -1,41 +1,151 @@
 {
   "routing": [
     {
-      "id": "agent-metadata",
-      "prompt": "Inspect the deployed Salesforce agent metadata and map which actions it invokes.",
+      "id": "stage1-discovery-brownfield",
+      "prompt": "Run brownfield discovery for our eight-year-old manufacturing Salesforce org and recommend what to reuse before proposing an Agentforce build.",
       "expected_primary": [
-        "agentforce-architecture-analyze"
+        "salesforce-discovery"
       ]
     },
     {
-      "id": "agent-design",
-      "prompt": "Propose a new Agentforce architecture from this finalized capability list.",
+      "id": "stage1-discovery-workshop",
+      "prompt": "Facilitate a customer discovery workshop to prioritize Agentforce use cases and produce a workshop brief.",
       "expected_primary": [
-        "agent-architecture"
+        "salesforce-discovery"
       ]
     },
     {
-      "id": "agent-session",
-      "prompt": "Trace this one Agentforce session in Data Cloud.",
+      "id": "stage1-tutorial-builder",
+      "prompt": "Turn this verified Agentforce setup brief into a standalone single-file interactive HTML tutorial walkthrough for admins.",
       "expected_primary": [
-        "agentforce-d360-analyze"
+        "salesforce-tutorial-builder"
       ]
     },
     {
-      "id": "agent-trends",
-      "prompt": "Investigate aggregate production Agentforce failures over the last month.",
+      "id": "stage2-d360-pipeline-schema",
+      "prompt": "Inspect all fields and data types on our UnifiedIndividual DMO and plan a Zero Copy DLO-to-DMO mapping.",
+      "expected_primary": [
+        "data360-data-pipeline"
+      ]
+    },
+    {
+      "id": "stage2-d360-pipeline-identity",
+      "prompt": "Fix false merges in our Data 360 identity resolution ruleset where household members share an email address.",
+      "expected_primary": [
+        "data360-data-pipeline"
+      ]
+    },
+    {
+      "id": "stage2-d360-activation-gov",
+      "prompt": "Review Data 360 data-space policies, fix a fan-out Calculated Insight SQL query, and preview a consent-excluded segment before activation.",
+      "expected_primary": [
+        "data360-activation-governance"
+      ]
+    },
+    {
+      "id": "stage2-schema-data",
+      "prompt": "Create a CustomObject and Master-Detail CustomField XML, optimize a selective WITH USER_MODE SOQL query, and run a Bulk API 2.0 upsert in sandbox.",
+      "expected_primary": [
+        "salesforce-schema-data"
+      ]
+    },
+    {
+      "id": "stage2-analytics",
+      "prompt": "Build a Tableau Next semantic model and verify CRM Analytics dataset security predicates for restricted sales reps.",
+      "expected_primary": [
+        "salesforce-analytics"
+      ]
+    },
+    {
+      "id": "stage3-apex",
+      "prompt": "Implement a bulkified Apex service using Apex Cursors and AccessLevel.USER_MODE, write StubProvider unit tests, and debug CPU governor limits.",
+      "expected_primary": [
+        "salesforce-apex"
+      ]
+    },
+    {
+      "id": "stage3-flow",
+      "prompt": "Audit this Record-Triggered Flow XML for DML inside loops and system-context security traps, then build an Omni-Channel Agentforce handoff Flow.",
+      "expected_primary": [
+        "salesforce-flow"
+      ]
+    },
+    {
+      "id": "stage3-lwc",
+      "prompt": "Build an accessible Lightning Web Component with GraphQL mutations, SLDS 2 styling hooks, and Jest tests.",
+      "expected_primary": [
+        "salesforce-lwc"
+      ]
+    },
+    {
+      "id": "stage3-integrations",
+      "prompt": "Configure an External Client App with OAuth, enhanced Named Credentials, a Pub/Sub CDC subscriber, and an Agent API streaming integration.",
+      "expected_primary": [
+        "salesforce-integrations"
+      ]
+    },
+    {
+      "id": "stage4-agentforce-design",
+      "prompt": "Design an Agentforce hybrid-reasoning architecture, persona calibration contract, voice UX prosody brief, and HTML technical design doc without coding.",
+      "expected_primary": [
+        "agentforce-design"
+      ]
+    },
+    {
+      "id": "stage4-agentforce-build",
+      "prompt": "Author Agent Script topics and actions in an aiAuthoringBundle, configure a Data Library custom retriever, and version a Prompt Builder template.",
+      "expected_primary": [
+        "agentforce-build"
+      ]
+    },
+    {
+      "id": "stage4-agentforce-review",
+      "prompt": "Run a read-only metadata invocation-graph inspection and HIPAA regulated-industry safeguard audit on our deployed Service Agent.",
+      "expected_primary": [
+        "agentforce-review"
+      ]
+    },
+    {
+      "id": "stage4-agentforce-test",
+      "prompt": "Generate escalation and authorization test scenarios from routing metadata and execute sf agent test run in sandbox.",
+      "expected_primary": [
+        "agentforce-test"
+      ]
+    },
+    {
+      "id": "stage5-security-access",
+      "prompt": "Design a least-privilege Permission Set Group matrix, audit Agentforce Service Agent backing-action identity, and check Experience Cloud guest access.",
+      "expected_primary": [
+        "salesforce-security-access"
+      ]
+    },
+    {
+      "id": "stage5-devops-deploy",
+      "prompt": "Create a scratch org snapshot, run sf project deploy validate with RunSpecifiedTests, and package an Unlocked 2GP version for CI.",
+      "expected_primary": [
+        "salesforce-devops-deploy"
+      ]
+    },
+    {
+      "id": "stage5-agentforce-observe",
+      "prompt": "Trace a single failing Agentforce session in Data 360 and investigate monthly production latency and Flex Credit anomalies.",
       "expected_primary": [
         "agentforce-observe"
       ]
     },
     {
-      "id": "no-skill",
-      "prompt": "What is 17 times 24? ",
+      "id": "negative-math",
+      "prompt": "What is 17 times 24?",
       "expected_primary": []
     },
     {
-      "id": "no-writing",
+      "id": "negative-general-vocab",
       "prompt": "What does the word concise mean?",
+      "expected_primary": []
+    },
+    {
+      "id": "negative-generic-cs",
+      "prompt": "Explain what a primary key is in two sentences.",
       "expected_primary": []
     }
   ]

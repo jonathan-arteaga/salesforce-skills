@@ -1,0 +1,6 @@
+interface:
+  display_name: "Salesforce Flow"
+  short_description: "Design, generate, and audit Salesforce Flows safely."
+  default_prompt: "Use $salesforce-flow to design, generate, or audit Salesforce Flows and verify security and bulk safety."
+policy:
+  allow_implicit_invocation: true

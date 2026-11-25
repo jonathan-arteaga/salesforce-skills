@@ -1,5 +1,0 @@
-{
-	"$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-	"name": "platform-apex-generate",
-	"description": "Implement or review production Apex classes and triggers. Return scoped Apex changes and validation. Use platform-apex-test-generate for authoring test classes."
-}

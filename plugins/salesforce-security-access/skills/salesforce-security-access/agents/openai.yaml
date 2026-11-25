@@ -1,0 +1,6 @@
+interface:
+  display_name: "Salesforce Security & Access"
+  short_description: "Design CRM access, Agentforce security, and org posture."
+  default_prompt: "Use $salesforce-security-access to design least-privilege CRM access, secure Agentforce runtime actions, or audit org security posture."
+policy:
+  allow_implicit_invocation: true

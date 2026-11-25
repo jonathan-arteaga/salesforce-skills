@@ -1,6 +1,0 @@
-{
-  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-  "name": "prompt-template-build",
-  "version": "1.0.0",
-  "description": "Create, revise or test Salesforce Prompt Builder templates, grounding inputs and version comparisons. Use for template lifecycle, evaluation datasets and activation handoffs. Not binding an already-active template to an agent action or designing a whole agent."
-}

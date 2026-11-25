@@ -5,112 +5,28 @@
   },
   "plugins": [
     {
-      "name": "agent-architecture",
+      "name": "agentforce-build",
       "source": {
         "source": "local",
-        "path": "./plugins/agent-architecture"
+        "path": "./plugins/agentforce-build"
       },
       "policy": {
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Agentforce"
+      "category": "Agentforce Design, Build & QA"
     },
     {
-      "name": "agent-improvement-orchestrator",
+      "name": "agentforce-design",
       "source": {
         "source": "local",
-        "path": "./plugins/agent-improvement-orchestrator"
+        "path": "./plugins/agentforce-design"
       },
       "policy": {
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Agentforce"
-    },
-    {
-      "name": "agentforce-api-integrate",
-      "source": {
-        "source": "local",
-        "path": "./plugins/agentforce-api-integrate"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Agentforce"
-    },
-    {
-      "name": "agentforce-architecture-analyze",
-      "source": {
-        "source": "local",
-        "path": "./plugins/agentforce-architecture-analyze"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Agentforce"
-    },
-    {
-      "name": "agentforce-config-review",
-      "source": {
-        "source": "local",
-        "path": "./plugins/agentforce-config-review"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Agentforce"
-    },
-    {
-      "name": "agentforce-d360-analyze",
-      "source": {
-        "source": "local",
-        "path": "./plugins/agentforce-d360-analyze"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Agentforce"
-    },
-    {
-      "name": "agentforce-escalation-test-generator",
-      "source": {
-        "source": "local",
-        "path": "./plugins/agentforce-escalation-test-generator"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Agentforce"
-    },
-    {
-      "name": "agentforce-generate",
-      "source": {
-        "source": "local",
-        "path": "./plugins/agentforce-generate"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Agentforce"
-    },
-    {
-      "name": "agentforce-grounding",
-      "source": {
-        "source": "local",
-        "path": "./plugins/agentforce-grounding"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Agentforce"
+      "category": "Agentforce Design, Build & QA"
     },
     {
       "name": "agentforce-observe",
@@ -122,19 +38,19 @@
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Agentforce"
+      "category": "Security, DevOps & Production Ops"
     },
     {
-      "name": "agentforce-technical-design-doc",
+      "name": "agentforce-review",
       "source": {
         "source": "local",
-        "path": "./plugins/agentforce-technical-design-doc"
+        "path": "./plugins/agentforce-review"
       },
       "policy": {
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Agentforce"
+      "category": "Agentforce Design, Build & QA"
     },
     {
       "name": "agentforce-test",
@@ -146,391 +62,151 @@
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Agentforce"
+      "category": "Agentforce Design, Build & QA"
     },
     {
-      "name": "agentforce-workshop-facilitator",
+      "name": "data360-activation-governance",
       "source": {
         "source": "local",
-        "path": "./plugins/agentforce-workshop-facilitator"
+        "path": "./plugins/data360-activation-governance"
       },
       "policy": {
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Agentforce"
+      "category": "Data 360, Core Data & Analytics"
     },
     {
-      "name": "automation-flow-generate",
+      "name": "data360-data-pipeline",
       "source": {
         "source": "local",
-        "path": "./plugins/automation-flow-generate"
+        "path": "./plugins/data360-data-pipeline"
       },
       "policy": {
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Salesforce Platform and Analytics"
+      "category": "Data 360, Core Data & Analytics"
     },
     {
-      "name": "building-salesforce-tutorial-app",
+      "name": "salesforce-analytics",
       "source": {
         "source": "local",
-        "path": "./plugins/building-salesforce-tutorial-app"
+        "path": "./plugins/salesforce-analytics"
       },
       "policy": {
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Salesforce Platform and Analytics"
+      "category": "Data 360, Core Data & Analytics"
     },
     {
-      "name": "conversation-design",
+      "name": "salesforce-apex",
       "source": {
         "source": "local",
-        "path": "./plugins/conversation-design"
+        "path": "./plugins/salesforce-apex"
       },
       "policy": {
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Agentforce"
+      "category": "Core Platform & Integrations"
     },
     {
-      "name": "crm-analytics-wave-generate",
+      "name": "salesforce-devops-deploy",
       "source": {
         "source": "local",
-        "path": "./plugins/crm-analytics-wave-generate"
+        "path": "./plugins/salesforce-devops-deploy"
       },
       "policy": {
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Salesforce Platform and Analytics"
+      "category": "Security, DevOps & Production Ops"
     },
     {
-      "name": "data360-governance",
+      "name": "salesforce-discovery",
       "source": {
         "source": "local",
-        "path": "./plugins/data360-governance"
+        "path": "./plugins/salesforce-discovery"
       },
       "policy": {
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Salesforce Platform and Analytics"
+      "category": "Discover & Enable"
     },
     {
-      "name": "data360-identity-resolution",
+      "name": "salesforce-flow",
       "source": {
         "source": "local",
-        "path": "./plugins/data360-identity-resolution"
+        "path": "./plugins/salesforce-flow"
       },
       "policy": {
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Salesforce Platform and Analytics"
+      "category": "Core Platform & Integrations"
     },
     {
-      "name": "data360-ingestion-modeling",
+      "name": "salesforce-integrations",
       "source": {
         "source": "local",
-        "path": "./plugins/data360-ingestion-modeling"
+        "path": "./plugins/salesforce-integrations"
       },
       "policy": {
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Salesforce Platform and Analytics"
+      "category": "Core Platform & Integrations"
     },
     {
-      "name": "data360-query-insights",
+      "name": "salesforce-lwc",
       "source": {
         "source": "local",
-        "path": "./plugins/data360-query-insights"
+        "path": "./plugins/salesforce-lwc"
       },
       "policy": {
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Salesforce Platform and Analytics"
+      "category": "Core Platform & Integrations"
     },
     {
-      "name": "data360-schema-get",
+      "name": "salesforce-schema-data",
       "source": {
         "source": "local",
-        "path": "./plugins/data360-schema-get"
+        "path": "./plugins/salesforce-schema-data"
       },
       "policy": {
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Salesforce Platform and Analytics"
+      "category": "Data 360, Core Data & Analytics"
     },
     {
-      "name": "data360-segmentation-activation",
+      "name": "salesforce-security-access",
       "source": {
         "source": "local",
-        "path": "./plugins/data360-segmentation-activation"
+        "path": "./plugins/salesforce-security-access"
       },
       "policy": {
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Salesforce Platform and Analytics"
+      "category": "Security, DevOps & Production Ops"
     },
     {
-      "name": "dx-org-manage",
+      "name": "salesforce-tutorial-builder",
       "source": {
         "source": "local",
-        "path": "./plugins/dx-org-manage"
+        "path": "./plugins/salesforce-tutorial-builder"
       },
       "policy": {
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Salesforce Platform and Analytics"
-    },
-    {
-      "name": "experience-lwc-generate",
-      "source": {
-        "source": "local",
-        "path": "./plugins/experience-lwc-generate"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Salesforce Platform and Analytics"
-    },
-    {
-      "name": "integration-connectivity-connected-app-configure",
-      "source": {
-        "source": "local",
-        "path": "./plugins/integration-connectivity-connected-app-configure"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Salesforce Platform and Analytics"
-    },
-    {
-      "name": "integration-connectivity-generate",
-      "source": {
-        "source": "local",
-        "path": "./plugins/integration-connectivity-generate"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Salesforce Platform and Analytics"
-    },
-    {
-      "name": "persona",
-      "source": {
-        "source": "local",
-        "path": "./plugins/persona"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Agentforce"
-    },
-    {
-      "name": "platform-apex-generate",
-      "source": {
-        "source": "local",
-        "path": "./plugins/platform-apex-generate"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Salesforce Platform and Analytics"
-    },
-    {
-      "name": "platform-apex-logs-debug",
-      "source": {
-        "source": "local",
-        "path": "./plugins/platform-apex-logs-debug"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Salesforce Platform and Analytics"
-    },
-    {
-      "name": "platform-apex-test-generate",
-      "source": {
-        "source": "local",
-        "path": "./plugins/platform-apex-test-generate"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Salesforce Platform and Analytics"
-    },
-    {
-      "name": "platform-apex-test-run",
-      "source": {
-        "source": "local",
-        "path": "./plugins/platform-apex-test-run"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Salesforce Platform and Analytics"
-    },
-    {
-      "name": "platform-custom-field-generate",
-      "source": {
-        "source": "local",
-        "path": "./plugins/platform-custom-field-generate"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Salesforce Platform and Analytics"
-    },
-    {
-      "name": "platform-custom-object-generate",
-      "source": {
-        "source": "local",
-        "path": "./plugins/platform-custom-object-generate"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Salesforce Platform and Analytics"
-    },
-    {
-      "name": "platform-data-manage",
-      "source": {
-        "source": "local",
-        "path": "./plugins/platform-data-manage"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Salesforce Platform and Analytics"
-    },
-    {
-      "name": "platform-metadata-deploy",
-      "source": {
-        "source": "local",
-        "path": "./plugins/platform-metadata-deploy"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Salesforce Platform and Analytics"
-    },
-    {
-      "name": "platform-soql-query",
-      "source": {
-        "source": "local",
-        "path": "./plugins/platform-soql-query"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Salesforce Platform and Analytics"
-    },
-    {
-      "name": "prompt-template-build",
-      "source": {
-        "source": "local",
-        "path": "./plugins/prompt-template-build"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Agentforce"
-    },
-    {
-      "name": "regulated-industry-agents-review",
-      "source": {
-        "source": "local",
-        "path": "./plugins/regulated-industry-agents-review"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Agentforce"
-    },
-    {
-      "name": "salesforce-access-design",
-      "source": {
-        "source": "local",
-        "path": "./plugins/salesforce-access-design"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Salesforce Platform and Analytics"
-    },
-    {
-      "name": "salesforce-flow-auditor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/salesforce-flow-auditor"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Salesforce Platform and Analytics"
-    },
-    {
-      "name": "salesforce-industry-playbook",
-      "source": {
-        "source": "local",
-        "path": "./plugins/salesforce-industry-playbook"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Agentforce"
-    },
-    {
-      "name": "tableau-next-asset-create",
-      "source": {
-        "source": "local",
-        "path": "./plugins/tableau-next-asset-create"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Salesforce Platform and Analytics"
-    },
-    {
-      "name": "voice-ux",
-      "source": {
-        "source": "local",
-        "path": "./plugins/voice-ux"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Agentforce"
+      "category": "Discover & Enable"
     }
   ]
 }

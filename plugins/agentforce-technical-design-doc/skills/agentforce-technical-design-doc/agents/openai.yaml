@@ -1,4 +1,0 @@
-interface:
-  display_name: "Agentforce Technical Design Doc"
-  short_description: "Document an agent\u2019s technical design."
-  default_prompt: "Use $agentforce-technical-design-doc to document an agent\u2019s technical design."

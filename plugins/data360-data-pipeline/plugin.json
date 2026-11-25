@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "data360-data-pipeline",
+  "version": "2.0.0",
+  "description": "Inspect Data 360 DLO/DMO schemas, design ingestion or Zero Copy federation, map DLOs to DMOs, and configure identity resolution rulesets. Use data360-activation-governance for SQL, policies, or segments, salesforce-schema-data for core CRM metadata, or salesforce-analytics for BI."
+}

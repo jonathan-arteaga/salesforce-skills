@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "salesforce-schema-data",
+  "version": "2.0.0",
+  "description": "Author Salesforce CustomObject and CustomField metadata XML, write or optimize SOQL/SOSL with USER_MODE, and execute safe sf data CRUD, Bulk 2.0, or test-data operations. Use salesforce-apex for Apex classes, salesforce-devops-deploy for deployments, or data360-data-pipeline for DLOs/DMOs."
+}

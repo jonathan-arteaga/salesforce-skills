@@ -1,4 +1,0 @@
-interface:
-  display_name: "Prompt Template Build"
-  short_description: "Create, compare and validate Prompt Builder versions."
-  default_prompt: "Use $prompt-template-build to create, compare and validate Prompt Builder versions."

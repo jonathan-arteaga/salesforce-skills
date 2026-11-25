@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "salesforce-devops-deploy",
+  "version": "2.0.0",
+  "description": "Manage Salesforce scratch orgs, snapshots, metadata validation and deploys, destructive changes, 2GP packaging, and DevOps Center CI/CD with explicit target-org pinning and production gates. Use salesforce-apex, salesforce-flow, salesforce-lwc, or agentforce-build to author source."
+}

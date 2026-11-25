@@ -1,4 +1,0 @@
-interface:
-  display_name: "Integration Connectivity Generate"
-  short_description: "Design integrations, credentials, callouts, and events."
-  default_prompt: "Use $integration-connectivity-generate to design integrations, credentials, callouts, and events."

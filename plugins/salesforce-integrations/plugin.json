@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "salesforce-integrations",
+  "version": "2.0.0",
+  "description": "Configure Salesforce integrations: External Client Apps, Named/External Credentials, callouts, External Services, Pub/Sub API events, Agent API sessions, and Hosted MCP Servers. Use salesforce-apex for Apex logic, agentforce-build for agents, and salesforce-devops-deploy for rollouts."
+}

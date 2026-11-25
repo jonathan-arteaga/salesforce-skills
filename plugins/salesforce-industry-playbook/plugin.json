@@ -1,6 +1,0 @@
-{
-  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-  "name": "salesforce-industry-playbook",
-  "version": "1.0.0",
-  "description": "Discover and tailor Salesforce or Agentforce builds to a customer\u2019s industry, business model, and actual environment. Use for industry playbooks, brownfield discovery, existing-org readiness, reuse-versus-rebuild decisions, acquired or multi-org estates, and phased adoption. Return an evidence-backed discovery brief and implementation handoff. Not a substitute for a known scoped code fix, persona-only design, live deployment, or detailed agent architecture."
-}

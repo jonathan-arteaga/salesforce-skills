@@ -1,0 +1,7 @@
+interface:
+  display_name: "Salesforce Analytics"
+  short_description: "Build and govern Tableau Next and CRM Analytics assets."
+  default_prompt: "Use $salesforce-analytics to build or govern Tableau Next semantic models and dashboards or CRM Analytics Wave recipes and datasets."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,6 +1,0 @@
-{
-  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-  "name": "data360-segmentation-activation",
-  "version": "1.0.0",
-  "description": "Create or troubleshoot Data Cloud / Data 360 segments and activation mappings, contact-point selection, audience counts and destination delivery. Use for audience preview, consent exclusion and authorized publishing. Not identity matching, core CRM campaigns, or general governance design."
-}

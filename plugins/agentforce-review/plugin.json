@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "agentforce-review",
+  "version": "2.0.0",
+  "description": "Inspect deployed Agentforce metadata, audit configuration and permissions, check regulated-industry safeguards, and plan improvement loops strictly read-only. Use agentforce-build for edits, agentforce-test for test runs, or agentforce-observe for runtime traces."
+}

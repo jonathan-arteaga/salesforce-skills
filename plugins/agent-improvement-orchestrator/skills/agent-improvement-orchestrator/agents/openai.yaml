@@ -1,4 +1,0 @@
-interface:
-  display_name: "Agent Improvement Orchestrator"
-  short_description: "Review, fix and test an agent in controlled iterations."
-  default_prompt: "Use $agent-improvement-orchestrator to review, fix and test an agent in controlled iterations."

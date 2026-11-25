@@ -1,4 +1,0 @@
-interface:
-  display_name: "Platform Apex Generate"
-  short_description: "Write and review Apex application code."
-  default_prompt: "Use $platform-apex-generate to write and review Apex application code."

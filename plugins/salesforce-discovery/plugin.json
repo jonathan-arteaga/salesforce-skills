@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "salesforce-discovery",
+  "version": "2.0.0",
+  "description": "Discover customer context, run Agentforce workshops, assess brownfield readiness, test industry fit, and scope Well-Architected solutions. Use agentforce-design for agent specs, agentforce-build for code, salesforce-security-access for RBAC, or salesforce-devops-deploy for rollout."
+}

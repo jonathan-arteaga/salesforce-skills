@@ -1,6 +1,0 @@
-{
-  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-  "name": "agentforce-grounding",
-  "version": "1.0.0",
-  "description": "Configure, troubleshoot or evaluate Agentforce Data Libraries, Knowledge or file grounding, search indexes and custom retrievers. Use for missing answers, irrelevant retrieval, stale content, citations and unauthorized data exposure. Not full agent creation, Knowledge article authoring, or general prompt-template lifecycle."
-}

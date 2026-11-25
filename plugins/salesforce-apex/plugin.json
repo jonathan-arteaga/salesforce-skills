@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "salesforce-apex",
+  "version": "2.0.0",
+  "description": "Author, test, run, and debug Salesforce Apex classes, triggers, and async jobs using API 67+ user-mode security, Apex Cursors, and governor-limit log diagnosis. Use salesforce-flow for declarative flows, salesforce-lwc for UI components, and salesforce-devops-deploy for org rollouts."
+}

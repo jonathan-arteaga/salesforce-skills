@@ -1,4 +1,0 @@
-interface:
-  display_name: "Data 360 Governance"
-  short_description: "Design data policies and prove access boundaries."
-  default_prompt: "Use $data360-governance to design data policies and prove access boundaries."

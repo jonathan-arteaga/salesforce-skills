@@ -1,4 +1,0 @@
-interface:
-  display_name: "Agentforce Generate"
-  short_description: "Build, repair, and validate Agent Script agents."
-  default_prompt: "Use $agentforce-generate to build, repair, and validate Agent Script agents."

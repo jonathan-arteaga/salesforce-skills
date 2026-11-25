@@ -1,0 +1,6 @@
+interface:
+  display_name: "Salesforce Integrations"
+  short_description: "Configure ECAs, Named Credentials, Pub/Sub, Agent API, and MCP."
+  default_prompt: "Use $salesforce-integrations to configure ECAs, Named Credentials, callouts, Pub/Sub events, Agent API, or Hosted MCP."
+policy:
+  allow_implicit_invocation: true

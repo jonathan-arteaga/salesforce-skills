@@ -1,0 +1,6 @@
+interface:
+  display_name: "Salesforce LWC"
+  short_description: "Build, style, test, and review Lightning Web Components."
+  default_prompt: "Use $salesforce-lwc to build, review, style, or Jest-test Lightning Web Components with SLDS 2 and LDS."
+policy:
+  allow_implicit_invocation: true

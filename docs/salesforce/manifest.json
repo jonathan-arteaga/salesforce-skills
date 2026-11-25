@@ -2,150 +2,69 @@
   "checked_on": "2026-11-15",
   "mcp_endpoint": "https://salesforce-docs-76258744c9d7.herokuapp.com/api/mcp",
   "skills": {
-    "agent-architecture": [
+    "agentforce-build": [
       "agent"
     ],
-    "agent-improvement-orchestrator": [
-      "agent",
-      "observe"
-    ],
-    "agentforce-architecture-analyze": [
-      "agent"
-    ],
-    "agentforce-config-review": [
+    "agentforce-design": [
       "agent",
       "voice"
-    ],
-    "agentforce-d360-analyze": [
-      "agent",
-      "data",
-      "observe"
-    ],
-    "agentforce-escalation-test-generator": [
-      "agent"
-    ],
-    "agentforce-generate": [
-      "agent"
     ],
     "agentforce-observe": [
       "agent",
       "data",
       "observe"
     ],
-    "agentforce-technical-design-doc": [
-      "agent"
+    "agentforce-review": [
+      "agent",
+      "voice",
+      "observe"
     ],
     "agentforce-test": [
       "agent"
     ],
-    "agentforce-workshop-facilitator": [
-      "agent"
-    ],
-    "conversation-design": [
-      "agent"
-    ],
-    "persona": [
-      "agent"
-    ],
-    "regulated-industry-agents-review": [
-      "agent",
-      "voice"
-    ],
-    "voice-ux": [
-      "agent",
-      "voice"
-    ],
-    "automation-flow-generate": [
-      "flow"
-    ],
-    "building-salesforce-tutorial-app": [
-      "platform"
-    ],
-    "crm-analytics-wave-generate": [
-      "analytics"
-    ],
-    "data360-schema-get": [
+    "data360-activation-governance": [
       "data"
     ],
-    "dx-org-manage": [
-      "platform"
+    "data360-data-pipeline": [
+      "data"
     ],
-    "experience-lwc-generate": [
-      "lwc"
+    "salesforce-analytics": [
+      "analytics",
+      "data"
     ],
-    "integration-connectivity-connected-app-configure": [
-      "integration"
-    ],
-    "integration-connectivity-generate": [
-      "integration"
-    ],
-    "platform-apex-generate": [
+    "salesforce-apex": [
       "apex"
     ],
-    "platform-apex-logs-debug": [
-      "apex"
-    ],
-    "platform-apex-test-generate": [
-      "apex"
-    ],
-    "platform-apex-test-run": [
-      "apex"
-    ],
-    "platform-custom-field-generate": [
-      "platform"
-    ],
-    "platform-custom-object-generate": [
-      "platform"
-    ],
-    "platform-data-manage": [
-      "platform"
-    ],
-    "platform-metadata-deploy": [
-      "platform"
-    ],
-    "platform-soql-query": [
-      "apex"
-    ],
-    "salesforce-flow-auditor": [
-      "flow"
-    ],
-    "tableau-next-asset-create": [
-      "data",
-      "analytics"
-    ],
-    "salesforce-access-design": [
+    "salesforce-devops-deploy": [
       "platform",
       "apex"
     ],
-    "data360-ingestion-modeling": [
-      "data"
-    ],
-    "data360-query-insights": [
-      "data"
-    ],
-    "data360-governance": [
-      "data"
-    ],
-    "agentforce-grounding": [
-      "agent",
-      "data"
-    ],
-    "data360-identity-resolution": [
-      "data"
-    ],
-    "data360-segmentation-activation": [
-      "data"
-    ],
-    "prompt-template-build": [
-      "agent"
-    ],
-    "agentforce-api-integrate": [
-      "agent",
-      "integration"
-    ],
-    "salesforce-industry-playbook": [
+    "salesforce-discovery": [
       "agent",
       "platform"
+    ],
+    "salesforce-flow": [
+      "flow"
+    ],
+    "salesforce-integrations": [
+      "integration",
+      "agent"
+    ],
+    "salesforce-lwc": [
+      "lwc"
+    ],
+    "salesforce-schema-data": [
+      "platform",
+      "apex"
+    ],
+    "salesforce-security-access": [
+      "apex",
+      "agent",
+      "observe"
+    ],
+    "salesforce-tutorial-builder": [
+      "platform",
+      "agent"
     ]
   },
   "sources": {

@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "salesforce-tutorial-builder",
+  "version": "2.0.0",
+  "description": "Build standalone interactive HTML or print/PDF setup tutorials and walkthroughs for Salesforce and Agentforce features. Use salesforce-lwc for production UI, agentforce-build for agent code, salesforce-discovery for workshops, or salesforce-devops-deploy for org releases."
+}

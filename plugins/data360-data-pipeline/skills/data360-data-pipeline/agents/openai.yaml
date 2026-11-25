@@ -1,0 +1,7 @@
+interface:
+  display_name: "Data 360 Data Pipeline"
+  short_description: "Inspect Data 360 schemas, ingestion, Zero Copy, and IR."
+  default_prompt: "Use $data360-data-pipeline to inspect DLO/DMO schemas, design ingestion or Zero Copy federation, or configure identity resolution."
+
+policy:
+  allow_implicit_invocation: true

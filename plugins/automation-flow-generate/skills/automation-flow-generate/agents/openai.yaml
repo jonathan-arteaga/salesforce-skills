@@ -1,4 +1,0 @@
-interface:
-  display_name: "Automation Flow Generate"
-  short_description: "Build platform automation flows."
-  default_prompt: "Use $automation-flow-generate to build platform automation flows."

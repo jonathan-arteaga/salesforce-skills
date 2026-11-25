@@ -1,0 +1,6 @@
+interface:
+  display_name: "Salesforce Tutorial Builder"
+  short_description: "Build interactive HTML or print-ready Salesforce tutorials."
+  default_prompt: "Use $salesforce-tutorial-builder to build a standalone interactive HTML or print-ready Salesforce setup tutorial."
+policy:
+  allow_implicit_invocation: false

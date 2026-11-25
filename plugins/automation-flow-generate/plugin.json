@@ -1,5 +1,0 @@
-{
-	"$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-	"name": "automation-flow-generate",
-	"description": "Create Salesforce Flow metadata from a Salesforce process and trigger. Return a Flow definition. Use salesforce-flow-auditor to assess an existing Flow."
-}

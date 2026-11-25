@@ -1,0 +1,7 @@
+interface:
+  display_name: "Salesforce Schema & Data"
+  short_description: "Author custom metadata, USER_MODE SOQL, and sf data ops."
+  default_prompt: "Use $salesforce-schema-data to generate object or field metadata, optimize SOQL queries, or run safe sf data operations."
+
+policy:
+  allow_implicit_invocation: true

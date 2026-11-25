@@ -1,4 +1,6 @@
 interface:
-  display_name: "Agentforce Observe"
-  short_description: "Investigate agent behavior and health alerts."
-  default_prompt: "Use $agentforce-observe to investigate agent behavior and health alerts."
+  display_name: "Agentforce Observability"
+  short_description: "Trace Data 360 sessions, trends, voice latency, and alerts."
+  default_prompt: "Use $agentforce-observe to trace an Agentforce session in Data 360, analyze production trends or latency/cost anomalies, or manage AHM alerts."
+policy:
+  allow_implicit_invocation: true

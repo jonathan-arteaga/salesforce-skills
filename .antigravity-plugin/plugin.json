@@ -1,0 +1,50 @@
+{
+  "$schema": "https://antigravity.dev/schemas/plugin/v1.json",
+  "name": "salesforce-skills",
+  "displayName": "Salesforce Skills",
+  "version": "2.0.0",
+  "description": "Domain-owning Salesforce, Data 360, and Agentforce skill library (17 skills) engineered for Gemini 4 / Google Antigravity progressive disclosure and strict org safety gates.",
+  "author": {
+    "name": "Jonathan Arteaga",
+    "url": "https://github.com/jonathan-arteaga"
+  },
+  "license": "Apache-2.0",
+  "repository": "https://github.com/jonathan-arteaga/salesforce-skills",
+  "keywords": [
+    "salesforce",
+    "agentforce",
+    "data-360",
+    "apex",
+    "lwc",
+    "flow",
+    "sf-cli",
+    "antigravity"
+  ],
+  "skills": [
+    "./plugins/agentforce-build/skills/agentforce-build",
+    "./plugins/agentforce-design/skills/agentforce-design",
+    "./plugins/agentforce-observe/skills/agentforce-observe",
+    "./plugins/agentforce-review/skills/agentforce-review",
+    "./plugins/agentforce-test/skills/agentforce-test",
+    "./plugins/data360-activation-governance/skills/data360-activation-governance",
+    "./plugins/data360-data-pipeline/skills/data360-data-pipeline",
+    "./plugins/salesforce-analytics/skills/salesforce-analytics",
+    "./plugins/salesforce-apex/skills/salesforce-apex",
+    "./plugins/salesforce-devops-deploy/skills/salesforce-devops-deploy",
+    "./plugins/salesforce-discovery/skills/salesforce-discovery",
+    "./plugins/salesforce-flow/skills/salesforce-flow",
+    "./plugins/salesforce-integrations/skills/salesforce-integrations",
+    "./plugins/salesforce-lwc/skills/salesforce-lwc",
+    "./plugins/salesforce-schema-data/skills/salesforce-schema-data",
+    "./plugins/salesforce-security-access/skills/salesforce-security-access",
+    "./plugins/salesforce-tutorial-builder/skills/salesforce-tutorial-builder"
+  ],
+  "suggestedPrompts": [
+    "Run brownfield discovery for our Salesforce Service Cloud org before proposing an Agentforce build.",
+    "Design a Data 360 DLO-to-DMO pipeline and identity resolution ruleset for customer profiles.",
+    "Implement and unit-test a bulkified Apex service using explicit WITH USER_MODE and Apex Cursors.",
+    "Audit our Agentforce agent configuration for regulated-industry controls without mutating the org.",
+    "Trace a failing Agentforce session in Data 360 and identify latency or tool-call bottlenecks.",
+    "Validate our deployment package against a sandbox with RunSpecifiedTests before release."
+  ]
+}

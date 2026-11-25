@@ -1,0 +1,6 @@
+interface:
+  display_name: "Salesforce Discovery"
+  short_description: "Run discovery, workshops, industry fit, and solution scoping."
+  default_prompt: "Use $salesforce-discovery to run brownfield discovery, facilitate an Agentforce workshop, or scope a Well-Architected solution."
+policy:
+  allow_implicit_invocation: true

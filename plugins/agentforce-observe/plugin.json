@@ -1,5 +1,6 @@
 {
-	"$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-	"name": "agentforce-observe",
-	"description": "Investigate aggregate Agentforce production behavior and manage authorized monitoring alerts. Return findings and scope. Use agentforce-d360-analyze for single-session tracing."
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "agentforce-observe",
+  "version": "2.0.0",
+  "description": "Trace Agentforce sessions in Data 360, analyze production trends, diagnose voice latency and Flex Credit anomalies, and manage authorized AHM alerts. Use agentforce-build for agent edits, agentforce-test for test runs, or data360-activation-governance for masking policies."
 }

@@ -1,5 +1,0 @@
-{
-	"$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-	"name": "crm-analytics-wave-generate",
-	"description": "Build CRM Analytics recipes, datasets, or dashboards in a scoped Salesforce environment. Return assets and validation evidence. Use tableau-next-asset-create for Tableau Next."
-}

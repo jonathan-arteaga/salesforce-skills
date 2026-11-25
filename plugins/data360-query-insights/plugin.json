@@ -1,6 +1,0 @@
-{
-  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-  "name": "data360-query-insights",
-  "version": "1.0.0",
-  "description": "Create or debug Data Cloud / Data 360 SQL queries and calculated insights with explicit grain, joins, measures and dimensions. Use for aggregate discrepancies, result validation and query execution planning. Not core CRM SOQL, CRM Analytics SAQL, or dashboard design."
-}

@@ -1,5 +1,0 @@
-{
-	"$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-	"name": "data360-schema-get",
-	"description": "Inspect Data Cloud DLO or DMO field definitions and types. Return schema details for the selected org. Use agentforce-d360-analyze for runtime sessions."
-}

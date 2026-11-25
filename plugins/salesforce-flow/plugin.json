@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "salesforce-flow",
+  "version": "2.0.0",
+  "description": "Design, generate, and audit Salesforce Flows (Record-Triggered, Screen, Scheduled, Autolaunched, Omni-Channel routing) for bulk safety, fault paths, and run-context security. Use salesforce-apex for Apex, agentforce-build for agent setup, and salesforce-devops-deploy for rollouts."
+}

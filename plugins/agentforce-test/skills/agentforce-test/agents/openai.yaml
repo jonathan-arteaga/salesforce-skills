@@ -1,4 +1,6 @@
 interface:
   display_name: "Agentforce Test"
-  short_description: "Create and run functional and security agent tests."
-  default_prompt: "Use $agentforce-test to create and run functional and security agent tests."
+  short_description: "Author and run Agentforce tests, probes, and handoffs."
+  default_prompt: "Use $agentforce-test to author Testing Center suites, run preview smoke checks, design OWASP security probes, or generate escalation test scenarios."
+policy:
+  allow_implicit_invocation: true

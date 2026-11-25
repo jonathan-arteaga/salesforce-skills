@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "salesforce-lwc",
+  "version": "2.0.0",
+  "description": "Build, style, test, and review Salesforce Lightning Web Components with LDS/UI API, GraphQL wire and mutations, LWC State Managers, TypeScript, SLDS 2 hooks, and Jest tests. Use salesforce-apex for Apex controllers, salesforce-flow for Flows, and salesforce-devops-deploy for rollouts."
+}
